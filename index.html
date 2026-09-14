@@ -1,0 +1,2413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Countrywide Lowbed Services | Heavy Haulage & Abnormal Loads</title>
+
+  <meta
+    name="description"
+    content="Countrywide Lowbed Services is a Secunda-based transport and logistics company specialising in heavy equipment, machinery and abnormal load transportation throughout South Africa."
+  >
+
+  <meta
+    name="keywords"
+    content="heavy haulage South Africa, abnormal loads, lowbed transport, machinery transport, mining transport, Secunda transport, heavy equipment transport"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+
+  <style>
+    :root {
+      --navy: #0B1E3D;
+      --navy-dark: #061329;
+      --navy-light: #102a52;
+      --yellow: #FFC107;
+      --yellow-dark: #e5a900;
+      --white: #ffffff;
+      --light: #f5f7fa;
+      --grey: #697586;
+      --dark: #111827;
+      --container: 1200px;
+      --shadow:
+        0 15px 45px rgba(6, 19, 41, 0.15);
+      --transition:
+        all 0.35s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--container));
+      margin: auto;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--yellow-dark);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .section-label::before {
+      content: "";
+      width: 32px;
+      height: 3px;
+      background: var(--yellow);
+    }
+
+    .section-title {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: clamp(42px, 5vw, 68px);
+      line-height: 0.95;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .section-title span {
+      color: var(--yellow-dark);
+    }
+
+    .section-text {
+      color: var(--grey);
+      line-height: 1.9;
+      font-size: 15px;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .topbar {
+      background: var(--navy-dark);
+      color: white;
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar-left,
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .topbar a {
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .topbar a:hover {
+      color: var(--yellow);
+    }
+
+    .topbar i {
+      color: var(--yellow);
+      margin-right: 6px;
+    }
+
+    @media (max-width: 700px) {
+      .topbar-left {
+        display: none;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(11, 30, 61, 0.97);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-inner {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: white;
+    }
+
+    .logo-mark {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow);
+      color: var(--navy);
+      font-size: 25px;
+      font-weight: 900;
+      transform: skew(-8deg);
+    }
+
+    .logo-text {
+      line-height: 1;
+    }
+
+    .logo-name {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 27px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .logo-sub {
+      color: var(--yellow);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 12px 15px;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--yellow);
+    }
+
+    .nav-button {
+      background: var(--yellow) !important;
+      color: var(--navy) !important;
+      padding: 13px 19px !important;
+    }
+
+    .nav-button:hover {
+      background: white !important;
+      transform: translateY(-2px);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 45px;
+      height: 45px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: transparent;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background: var(--navy-dark);
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px 5%;
+        border-top: 2px solid var(--yellow);
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 15px;
+      }
+    }
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero {
+      min-height: calc(100vh - 124px);
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      /*
+        CHANGED:
+        The image now uses "contain" instead of "cover".
+        This keeps the complete image visible without cropping.
+      */
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 18, 40, 0.96) 0%,
+          rgba(5, 18, 40, 0.86) 40%,
+          rgba(5, 18, 40, 0.35) 70%,
+          rgba(5, 18, 40, 0.15) 100%
+        ),
+        url("img1.jpeg") center/contain no-repeat;
+
+      background-color: var(--navy-dark);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 7px;
+      background: var(--yellow);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      padding: 90px 0;
+    }
+
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--yellow);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero-label::before {
+      content: "";
+      width: 45px;
+      height: 3px;
+      background: var(--yellow);
+    }
+
+    .hero h1 {
+      font-family: "Barlow Condensed", sans-serif;
+      color: white;
+      font-size: clamp(58px, 8vw, 105px);
+      font-weight: 800;
+      line-height: 0.86;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: var(--yellow);
+    }
+
+    .hero-description {
+      max-width: 620px;
+      color: rgba(255,255,255,0.85);
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 25px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: var(--transition);
+    }
+
+    .btn-primary {
+      background: var(--yellow);
+      color: var(--navy);
+    }
+
+    .btn-primary:hover {
+      background: white;
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.5);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--navy);
+      transform: translateY(-3px);
+    }
+
+    .hero-stat {
+      position: absolute;
+      right: 5%;
+      bottom: 50px;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: white;
+    }
+
+    .hero-stat-number {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 62px;
+      font-weight: 800;
+      color: var(--yellow);
+      line-height: 1;
+    }
+
+    .hero-stat-text {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      max-width: 100px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 850px) {
+      .hero {
+        min-height: 720px;
+
+        /*
+          On mobile the image fits the full width while
+          maintaining its original proportions.
+        */
+        background:
+          linear-gradient(
+            90deg,
+            rgba(5,18,40,0.93),
+            rgba(5,18,40,0.68)
+          ),
+          url("img1.jpeg") center bottom/100% auto no-repeat;
+
+        background-color: var(--navy-dark);
+      }
+
+      .hero-stat {
+        display: none;
+      }
+    }
+
+    /* =========================
+       INTRO STRIP
+    ========================= */
+
+    .intro-strip {
+      background: var(--yellow);
+      padding: 27px 0;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .intro-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      text-align: center;
+    }
+
+    .intro-item i {
+      font-size: 23px;
+    }
+
+    @media (max-width: 700px) {
+      .intro-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+      background: var(--light);
+    }
+
+    /*
+      CHANGED:
+      "contain" keeps the complete image inside the frame.
+    */
+    .about-image img {
+      width: 100%;
+      height: 570px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .about-image::before {
+      content: "";
+      position: absolute;
+      width: 85px;
+      height: 85px;
+      left: -15px;
+      top: -15px;
+      border-left: 5px solid var(--yellow);
+      border-top: 5px solid var(--yellow);
+      z-index: 2;
+    }
+
+    .about-image::after {
+      content: "";
+      position: absolute;
+      width: 85px;
+      height: 85px;
+      right: -15px;
+      bottom: -15px;
+      border-right: 5px solid var(--yellow);
+      border-bottom: 5px solid var(--yellow);
+      z-index: 2;
+    }
+
+    .about-badge {
+      position: absolute;
+      right: -25px;
+      bottom: 35px;
+      width: 155px;
+      height: 155px;
+      background: var(--navy);
+      border: 7px solid var(--yellow);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .about-badge strong {
+      display: block;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 55px;
+      line-height: 0.8;
+      color: var(--yellow);
+    }
+
+    .about-badge span {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .about-content .section-text {
+      margin: 25px 0;
+    }
+
+    .about-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 30px;
+      margin-top: 28px;
+      list-style: none;
+    }
+
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .about-list i {
+      color: var(--yellow-dark);
+      font-size: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .about-image {
+        max-width: 650px;
+        margin: auto;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .about-image img {
+        height: 430px;
+      }
+
+      .about-badge {
+        width: 125px;
+        height: 125px;
+        right: 10px;
+      }
+
+      .about-badge strong {
+        font-size: 42px;
+      }
+
+      .about-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      background: var(--light);
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 55px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 35px;
+      border-bottom: 4px solid transparent;
+      box-shadow: 0 8px 25px rgba(11,30,61,0.06);
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-bottom-color: var(--yellow);
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      width: 65px;
+      height: 65px;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: var(--yellow);
+      font-size: 27px;
+      margin-bottom: 25px;
+    }
+
+    .service-card h3 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 29px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 13px;
+    }
+
+    .service-card p {
+      font-size: 13px;
+      color: var(--grey);
+      line-height: 1.8;
+    }
+
+    @media (max-width: 950px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================
+       DARK BANNER
+    ========================= */
+
+    .dark-banner {
+      background: linear-gradient(100deg, var(--navy-dark), var(--navy));
+      padding: 70px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dark-banner::after {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      right: -100px;
+      top: -170px;
+      border: 70px solid rgba(255,193,7,0.08);
+      transform: rotate(45deg);
+    }
+
+    .dark-banner-inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .dark-banner h2 {
+      font-family: "Barlow Condensed", sans-serif;
+      color: white;
+      font-size: clamp(40px, 5vw, 65px);
+      text-transform: uppercase;
+      line-height: 0.9;
+    }
+
+    .dark-banner h2 span {
+      color: var(--yellow);
+    }
+
+    .dark-banner p {
+      color: rgba(255,255,255,0.65);
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 750px) {
+      .dark-banner-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* =========================
+       SECTORS
+    ========================= */
+
+    .sectors {
+      background: white;
+    }
+
+    .sectors-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .sector-card {
+      min-height: 310px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      background: var(--navy);
+    }
+
+    /*
+      CHANGED:
+      Images now use contain instead of cover.
+      This prevents the edges of the image from being cut off.
+    */
+    .sector-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      background: var(--navy);
+      opacity: 0.65;
+      transition: opacity 0.35s ease;
+    }
+
+    .sector-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        transparent 25%,
+        rgba(5,18,40,0.95)
+      );
+    }
+
+    /*
+      CHANGED:
+      No zoom on hover because zooming can crop the image.
+    */
+    .sector-card:hover img {
+      opacity: 0.8;
+    }
+
+    .sector-content {
+      position: relative;
+      z-index: 2;
+      padding: 25px;
+      color: white;
+    }
+
+    .sector-content i {
+      color: var(--yellow);
+      font-size: 27px;
+    }
+
+    .sector-content h3 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 29px;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 950px) {
+      .sectors-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .sectors-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================
+       WHY COUNTRYWIDE
+    ========================= */
+
+    .why {
+      background: var(--light);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .why-image {
+      height: 560px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--navy);
+    }
+
+    /*
+      CHANGED:
+      Complete image remains inside the frame.
+    */
+    .why-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .why-items {
+      margin-top: 30px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 20px;
+      background: white;
+      padding: 23px;
+      border-left: 4px solid var(--yellow);
+      transition: var(--transition);
+    }
+
+    .why-item:hover {
+      transform: translateX(7px);
+      box-shadow: 0 10px 25px rgba(11,30,61,0.08);
+    }
+
+    .why-number {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--yellow-dark);
+      line-height: 1;
+    }
+
+    .why-item h3 {
+      font-size: 15px;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .why-item p {
+      font-size: 12px;
+      color: var(--grey);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 850px) {
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-image {
+        height: 450px;
+      }
+    }
+
+    /* =========================
+       GALLERY
+    ========================= */
+
+.gallery {
+  background: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr 1fr;
+  grid-template-rows: 280px 280px;
+  gap: 12px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  background: var(--navy);
+}
+
+.gallery-item:first-child {
+  grid-row: span 2;
+}
+
+.gallery-item:nth-child(4) {
+  grid-column: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: var(--navy);
+  transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background: linear-gradient(
+    transparent 50%,
+    rgba(6,19,41,0.8)
+  );
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 750px) {
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 220px);
+  }
+
+  .gallery-item:first-child {
+    grid-row: span 2;
+  }
+
+  .gallery-item:nth-child(4) {
+    grid-column: span 1;
+  }
+}
+
+    /* =========================
+       NATIONWIDE
+    ========================= */
+
+    .nationwide {
+      background: var(--yellow);
+      text-align: center;
+      padding: 85px 20px;
+    }
+
+    .nationwide h2 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: clamp(50px, 8vw, 95px);
+      color: var(--navy);
+      line-height: 0.85;
+      text-transform: uppercase;
+    }
+
+    .nationwide p {
+      max-width: 650px;
+      margin: 25px auto 30px;
+      color: rgba(11,30,61,0.75);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .nationwide .btn {
+      background: var(--navy);
+      color: white;
+    }
+
+    .nationwide .btn:hover {
+      background: white;
+      color: var(--navy);
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: linear-gradient(
+        100deg,
+        rgba(6,19,41,0.98),
+        rgba(11,30,61,0.94)
+      );
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact-intro {
+      color: rgba(255,255,255,0.68);
+      font-size: 14px;
+      line-height: 1.9;
+      margin: 25px 0 35px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 18px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .contact-icon {
+      flex: 0 0 46px;
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow);
+      color: var(--navy);
+      font-size: 19px;
+    }
+
+    .contact-item small {
+      display: block;
+      color: var(--yellow);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .contact-item a,
+    .contact-item span {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .contact-item a:hover {
+      color: var(--yellow);
+    }
+
+    .contact-box {
+      background: white;
+      padding: 40px;
+      color: var(--navy);
+      position: relative;
+    }
+
+    .contact-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: var(--yellow);
+    }
+
+    .contact-box h3 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 42px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .contact-box p {
+      color: var(--grey);
+      font-size: 13px;
+      line-height: 1.8;
+      margin: 15px 0 25px;
+    }
+
+    .contact-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .contact-buttons .btn {
+      width: 100%;
+    }
+
+    @media (max-width: 850px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .contact-box {
+        padding: 30px 22px;
+      }
+
+      .contact-buttons {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #040d1d;
+      color: rgba(255,255,255,0.6);
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      color: white;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .footer-logo span {
+      color: var(--yellow);
+    }
+
+    footer p {
+      font-size: 11px;
+    }
+
+    .back-top {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow);
+      color: var(--navy);
+      font-size: 18px;
+      transition: var(--transition);
+    }
+
+    .back-top:hover {
+      background: white;
+    }
+
+    @media (max-width: 650px) {
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* =========================
+       REVEAL ANIMATION
+    ========================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(35px);
+      transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       SMALL MOBILE
+    ========================= */
+
+    @media (max-width: 500px) {
+      .section {
+        padding: 75px 0;
+      }
+
+      .section-title {
+        font-size: 48px;
+      }
+
+      .hero-content {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        font-size: 64px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-left">
+        <a href="tel:+27711077261">
+          <i class="bi bi-telephone-fill"></i>
+          071 107 7261
+        </a>
+
+        <a href="mailto:countrywidelowbed@gmail.com">
+          <i class="bi bi-envelope-fill"></i>
+          countrywidelowbed@gmail.com
+        </a>
+      </div>
+
+      <div class="topbar-right">
+        <a href="#contact">
+          <i class="bi bi-geo-alt-fill"></i>
+          Secunda, South Africa
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+
+      <a href="#home" class="logo">
+
+        <div class="logo-mark">
+          <i class="bi bi-truck"></i>
+        </div>
+
+        <div class="logo-text">
+          <div class="logo-name">Countrywide</div>
+          <div class="logo-sub">Lowbed Services</div>
+        </div>
+
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="#home" class="active">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#sectors">Sectors</a>
+        </li>
+
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+
+        <li>
+          <a href="#contact" class="nav-button">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="container">
+
+      <div class="hero-content reveal">
+
+        <div class="hero-label">
+          Heavy Haulage Specialists
+        </div>
+
+        <h1>
+          WE MOVE<br>
+          <span>WHAT MATTERS.</span>
+        </h1>
+
+        <p class="hero-description">
+          Heavy equipment, machinery and abnormal load transportation
+          throughout South Africa. From Secunda to anywhere the job takes us.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="tel:+27711077261"
+            class="btn btn-primary"
+          >
+            <i class="bi bi-telephone-fill"></i>
+            Call Now
+          </a>
+
+          <a
+            href="#services"
+            class="btn btn-outline"
+          >
+            Our Services
+            <i class="bi bi-arrow-down"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-stat">
+
+      <div class="hero-stat-number">
+        26+
+      </div>
+
+      <div class="hero-stat-text">
+        Years of<br>
+        Industry Experience
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO STRIP -->
+  <section class="intro-strip">
+
+    <div class="container intro-grid">
+
+      <div class="intro-item">
+        <i class="bi bi-truck"></i>
+        Heavy Haulage
+      </div>
+
+      <div class="intro-item">
+        <i class="bi bi-box-seam"></i>
+        Abnormal Loads
+      </div>
+
+      <div class="intro-item">
+        <i class="bi bi-gear-wide-connected"></i>
+        Machinery Transport
+      </div>
+
+      <div class="intro-item">
+        <i class="bi bi-map"></i>
+        Nationwide Service
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+
+    <div class="container about-grid">
+
+      <div class="about-image reveal">
+
+        <img
+          src="img2.jpeg"
+          alt="Countrywide Lowbed Services heavy haulage truck"
+        >
+
+        <div class="about-badge">
+
+          <div>
+            <strong>26+</strong>
+            <span>Years Experience</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-content reveal">
+
+        <div class="section-label">
+          About Countrywide
+        </div>
+
+        <h2 class="section-title">
+          BUILT TO <span>CARRY.</span><br>
+          DRIVEN TO DELIVER.
+        </h2>
+
+        <p class="section-text">
+          Countrywide Lowbed Services is a Secunda-based transport
+          and logistics company specialising in the transportation
+          of heavy equipment and machinery throughout South Africa.
+        </p>
+
+        <p class="section-text">
+          We specialise in the transportation of heavy equipment,
+          mining machinery, construction equipment, agricultural
+          machinery, and abnormal loads throughout South Africa.
+        </p>
+
+        <p class="section-text">
+          With over <strong>26 years of industry experience</strong>,
+          we provide reliable, safe, and efficient machinery moving
+          solutions tailored to the mining, construction, agricultural,
+          and industrial sectors.
+        </p>
+
+        <ul class="about-list">
+
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            Safe Transportation
+          </li>
+
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            Experienced Drivers
+          </li>
+
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            Reliable Service
+          </li>
+
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            Nationwide Coverage
+          </li>
+
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            Industry Compliance
+          </li>
+
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            On-Time Delivery
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+
+    <div class="container">
+
+      <div class="section-heading reveal">
+
+        <div class="section-label">
+          What We Do
+        </div>
+
+        <h2 class="section-title">
+          HEAVY LOADS.<br>
+          <span>SMART SOLUTIONS.</span>
+        </h2>
+
+        <p
+          class="section-text"
+          style="margin-top:20px;"
+        >
+          Professional transportation solutions for equipment,
+          machinery and loads that require specialist handling
+          and dependable delivery.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+
+          <div class="service-icon">
+            <i class="bi bi-truck-front-fill"></i>
+          </div>
+
+          <h3>Heavy Haulage</h3>
+
+          <p>
+            Professional transportation of heavy equipment and machinery
+            using suitable heavy-haulage equipment.
+          </p>
+
+        </div>
+
+
+        <div class="service-card reveal">
+
+          <div class="service-icon">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+          </div>
+
+          <h3>Abnormal Loads</h3>
+
+          <p>
+            Reliable transportation solutions for oversized,
+            overweight and specialised loads throughout South Africa.
+          </p>
+
+        </div>
+
+
+        <div class="service-card reveal">
+
+          <div class="service-icon">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+
+          <h3>Machinery Moving</h3>
+
+          <p>
+            Safe movement of heavy machinery and equipment for mining,
+            construction, agriculture and industry.
+          </p>
+
+        </div>
+
+
+        <div class="service-card reveal">
+
+          <div class="service-icon">
+            <i class="bi bi-building-fill"></i>
+          </div>
+
+          <h3>Mining Equipment</h3>
+
+          <p>
+            Transport solutions for mining machinery and equipment
+            across South Africa.
+          </p>
+
+        </div>
+
+
+        <div class="service-card reveal">
+
+          <div class="service-icon">
+            <i class="bi bi-cone-striped"></i>
+          </div>
+
+          <h3>Construction Equipment</h3>
+
+          <p>
+            Transportation of construction machinery and equipment
+            to and from project sites.
+          </p>
+
+        </div>
+
+
+        <div class="service-card reveal">
+
+          <div class="service-icon">
+            <i class="bi bi-wrench-adjustable-circle-fill"></i>
+          </div>
+
+          <h3>Specialised Transport</h3>
+
+          <p>
+            Tailored transport solutions designed around the requirements
+            of your load and destination.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DARK BANNER -->
+  <section class="dark-banner">
+
+    <div class="container dark-banner-inner">
+
+      <div>
+
+        <h2>
+          ANY LOAD.<br>
+          ANYWHERE.<br>
+          <span>ANYTIME.</span>
+        </h2>
+
+        <p>
+          From Secunda across South Africa, Countrywide Lowbed Services
+          keeps your operation moving.
+        </p>
+
+      </div>
+
+      <a
+        href="tel:+27711077261"
+        class="btn btn-primary"
+      >
+        <i class="bi bi-telephone-fill"></i>
+        Speak To Our Team
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECTORS -->
+  <section class="section sectors" id="sectors">
+
+    <div class="container">
+
+      <div class="section-heading reveal">
+
+        <div class="section-label">
+          Industries We Serve
+        </div>
+
+        <h2 class="section-title">
+          TRANSPORT<br>
+          <span>BUILT AROUND YOU.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="sectors-grid">
+
+        <div class="sector-card reveal">
+
+          <img
+            src="img3.jpeg"
+            alt="Mining equipment transport"
+          >
+
+          <div class="sector-content">
+
+            <i class="bi bi-building-gear"></i>
+
+            <h3>Mining</h3>
+
+          </div>
+
+        </div>
+
+
+        <div class="sector-card reveal">
+
+          <img
+            src="img4.jpeg"
+            alt="Construction equipment transport"
+          >
+
+          <div class="sector-content">
+
+            <i class="bi bi-cone-striped"></i>
+
+            <h3>Construction</h3>
+
+          </div>
+
+        </div>
+
+
+        <div class="sector-card reveal">
+
+          <img
+            src="img5.jpeg"
+            alt="Agricultural machinery transport"
+          >
+
+          <div class="sector-content">
+
+            <i class="bi bi-tree-fill"></i>
+
+            <h3>Agriculture</h3>
+
+          </div>
+
+        </div>
+
+
+        <div class="sector-card reveal">
+
+          <img
+            src="img6.jpeg"
+            alt="Industrial machinery transport"
+          >
+
+          <div class="sector-content">
+
+            <i class="bi bi-buildings-fill"></i>
+
+            <h3>Industrial</h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY COUNTRYWIDE -->
+  <section class="section why">
+
+    <div class="container why-grid">
+
+      <div class="why-image reveal">
+
+        <img
+          src="img7.jpeg"
+          alt="Countrywide Lowbed Services truck"
+        >
+
+      </div>
+
+
+      <div class="reveal">
+
+        <div class="section-label">
+          Why Countrywide
+        </div>
+
+        <h2 class="section-title">
+          EXPERIENCE<br>
+          <span>YOU CAN TRUST.</span>
+        </h2>
+
+        <p
+          class="section-text"
+          style="margin-top:20px;"
+        >
+          Our experienced operations team, professional drivers,
+          and versatile fleet ensure that every load is transported
+          safely, on time, and in full compliance with industry standards.
+        </p>
+
+
+        <div class="why-items">
+
+          <div class="why-item">
+
+            <div class="why-number">
+              01
+            </div>
+
+            <div>
+              <h3>
+                26+ Years Industry Experience
+              </h3>
+
+              <p>
+                Decades of practical experience moving heavy equipment
+                and specialised loads.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="why-number">
+              02
+            </div>
+
+            <div>
+
+              <h3>
+                Safety First
+              </h3>
+
+              <p>
+                Every load is handled with careful planning,
+                professional drivers and a strong focus on safety.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="why-number">
+              03
+            </div>
+
+            <div>
+
+              <h3>
+                Nationwide Coverage
+              </h3>
+
+              <p>
+                Based in Secunda and available to transport
+                throughout South Africa.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="why-number">
+              04
+            </div>
+
+            <div>
+
+              <h3>
+                Reliable Delivery
+              </h3>
+
+              <p>
+                Professional transport solutions focused on getting
+                your equipment where it needs to be.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- GALLERY -->
+  <section class="section gallery" id="gallery">
+
+    <div class="container">
+
+      <div class="section-heading reveal">
+
+        <div class="section-label">
+          Our Fleet
+        </div>
+
+        <h2 class="section-title">
+          BUILT FOR<br>
+          <span>THE BIG JOBS.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal">
+
+          <img
+            src="img1.jpeg"
+            alt="Countrywide Lowbed Services truck"
+          >
+
+          <div class="gallery-overlay">
+            Heavy Haulage
+          </div>
+
+        </div>
+
+
+        <div class="gallery-item reveal">
+
+          <img
+            src="img2.jpeg"
+            alt="Heavy machinery transport"
+          >
+
+          <div class="gallery-overlay">
+            Machinery
+          </div>
+
+        </div>
+
+
+        <div class="gallery-item reveal">
+
+          <img
+            src="img3.jpeg"
+            alt="Mining transport"
+          >
+
+          <div class="gallery-overlay">
+            Mining
+          </div>
+
+        </div>
+
+
+        <div class="gallery-item reveal">
+
+          <img
+            src="img8.jpeg"
+            alt="Countrywide Lowbed Services transport"
+          >
+
+          <div class="gallery-overlay">
+            Nationwide Transport
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NATIONWIDE CTA -->
+  <section class="nationwide">
+
+    <div class="container">
+
+      <h2>
+        SOUTH AFRICA.<br>
+        WE'RE ON THE WAY.
+      </h2>
+
+      <p>
+        Whether you need heavy machinery moved across town
+        or across the country, Countrywide Lowbed Services
+        provides dependable transport solutions from Secunda
+        to destinations throughout South Africa.
+      </p>
+
+      <a
+        href="tel:+27711077261"
+        class="btn"
+      >
+        <i class="bi bi-telephone-fill"></i>
+        Get A Transport Quote
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+
+    <div class="container contact-grid">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          Contact Us
+        </div>
+
+        <h2 class="section-title">
+          LET'S MOVE<br>
+          <span>YOUR LOAD.</span>
+        </h2>
+
+        <p class="contact-intro">
+          Have heavy equipment, machinery or an abnormal load
+          that needs to be transported?
+          Speak to our team today and let's discuss your
+          transport requirements.
+        </p>
+
+
+        <div class="contact-details">
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+
+            <div>
+
+              <small>
+                Office
+              </small>
+
+              <a href="tel:+27711077261">
+                071 107 7261
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+
+            <div>
+
+              <small>
+                Email
+              </small>
+
+              <a href="mailto:countrywidelowbed@gmail.com">
+                countrywidelowbed@gmail.com
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              <i class="bi bi-exclamation-triangle-fill"></i>
+            </div>
+
+            <div>
+
+              <small>
+                Emergency
+              </small>
+
+              <a href="tel:+27625417499">
+                062 541 7499
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+
+            <div>
+
+              <small>
+                Address
+              </small>
+
+              <span>
+                Extension 53, Detroit Crescent,<br>
+                Secunda, 2302
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-box reveal">
+
+        <h3>
+          READY TO<br>
+          MOVE?
+        </h3>
+
+        <p>
+          Contact Countrywide Lowbed Services for reliable heavy haulage,
+          machinery transport and abnormal load transportation throughout
+          South Africa.
+        </p>
+
+        <div class="contact-buttons">
+
+          <a
+            href="tel:+27711077261"
+            class="btn btn-primary"
+          >
+            <i class="bi bi-telephone-fill"></i>
+            Call Now
+          </a>
+
+          <a
+            href="mailto:countrywidelowbed@gmail.com?subject=Transport%20Enquiry"
+            class="btn"
+            style="background:var(--navy);color:white;"
+          >
+            <i class="bi bi-envelope-fill"></i>
+            Email Us
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div class="footer-logo">
+        COUNTRYWIDE
+        <span>LOWBED SERVICES</span>
+      </div>
+
+      <p>
+        © 2026 Countrywide Lowbed Services. All Rights Reserved.
+      </p>
+
+      <a
+        href="#home"
+        class="back-top"
+        aria-label="Back to top"
+      >
+        <i class="bi bi-arrow-up"></i>
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    /* MOBILE MENU */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+
+      navLinks.classList.toggle("show");
+
+      const icon = menuToggle.querySelector("i");
+
+      if (navLinks.classList.contains("show")) {
+
+        icon.classList.remove("bi-list");
+        icon.classList.add("bi-x-lg");
+
+      } else {
+
+        icon.classList.remove("bi-x-lg");
+        icon.classList.add("bi-list");
+
+      }
+
+    });
+
+
+    /* CLOSE MOBILE MENU AFTER CLICKING LINK */
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navLinks.classList.remove("show");
+
+        const icon = menuToggle.querySelector("i");
+
+        icon.classList.remove("bi-x-lg");
+        icon.classList.add("bi-list");
+
+      });
+
+    });
+
+
+    /* SCROLL REVEAL */
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            observer.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+
+    document.querySelectorAll(".reveal").forEach(element => {
+
+      observer.observe(element);
+
+    });
+
+
+    /* ACTIVE NAVIGATION */
+
+    const sections = document.querySelectorAll("section[id]");
+    const navItems = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+
+      let current = "";
+
+      sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+          window.scrollY >= sectionTop &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
+
+          current = section.getAttribute("id");
+
+        }
+
+      });
+
+
+      navItems.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (
+          link.getAttribute("href") === "#" + current
+        ) {
+
+          link.classList.add("active");
+
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
