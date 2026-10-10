@@ -1,46 +1,24 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" href="favicon.png">
-
-  <title>Countrywide Lowbed Services | Heavy Haulage & Abnormal Loads</title>
-
-  <meta
-    name="description"
-    content="Countrywide Lowbed Services is a Secunda-based transport and logistics company specialising in heavy equipment, machinery and abnormal load transportation throughout South Africa."
-  >
-
-  <meta
-    name="keywords"
-    content="heavy haulage South Africa, abnormal loads, lowbed transport, machinery transport, mining transport, Secunda transport, heavy equipment transport"
-  >
-
-  <!-- OPEN GRAPH -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Countrywide Lowbed Services | Heavy Haulage & Abnormal Loads">
-<meta property="og:description" content="Countrywide Lowbed Services is a Secunda-based transport and logistics company specialising in heavy equipment, machinery and abnormal load transportation throughout South Africa.">
-<meta property="og:image" content="https://www.countrywidelowbed.co.za/og-image.jpg">
-<meta property="og:image:alt" content="Countrywide Lowbed Services | Heavy Haulage & Abnormal Loads">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-  >
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<title>Countrywide Lowbed Services | Heavy Haulage &amp; Abnormal Loads</title>
+<meta content="Countrywide Lowbed Services is a Secunda-based transport and logistics company specialising in heavy equipment, machinery and abnormal load transportation throughout South Africa." name="description"/>
+<meta content="heavy haulage South Africa, abnormal loads, lowbed transport, machinery transport, mining transport, Secunda transport, heavy equipment transport" name="keywords"/>
+<!-- OPEN GRAPH -->
+<meta content="website" property="og:type"/>
+<meta content="Countrywide Lowbed Services | Heavy Haulage &amp; Abnormal Loads" property="og:title"/>
+<meta content="Countrywide Lowbed Services is a Secunda-based transport and logistics company specialising in heavy equipment, machinery and abnormal load transportation throughout South Africa." property="og:description"/>
+<meta content="https://www.countrywidelowbed.co.za/og-image.jpg" property="og:image"/>
+<meta content="Countrywide Lowbed Services | Heavy Haulage &amp; Abnormal Loads" property="og:image:alt"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<style>
     :root {
       --navy: #0B1E3D;
       --navy-dark: #061329;
@@ -2577,1420 +2555,990 @@
       }
     }
 
-  </style>
+  <style>
+
+/* =========================================================
+   COUNTRYWIDE / ARCHITECTURAL HERO + NAVBAR REDESIGN
+   Scoped to the header and hero; all other sections retained.
+========================================================= */
+.topbar{background:#061329;border-bottom:1px solid rgba(255,193,7,.13)}
+.navbar{background:rgba(6,19,41,.97);border-bottom:1px solid rgba(255,255,255,.19);backdrop-filter:blur(18px);transition:background .35s,border-color .35s}
+.nav-inner{min-height:90px}
+.logo img{width:225px;height:68px;object-fit:contain}
+.nav-links{gap:7px}
+.nav-links a{color:#fff;font-size:11px;letter-spacing:1.7px;font-weight:700;position:relative}
+.nav-links a:not(.nav-button)::after{content:"";position:absolute;bottom:5px;left:15px;right:15px;height:1px;background:#FFC107;transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav-links a:not(.nav-button):hover::after,.nav-links a.active:not(.nav-button)::after{transform:scaleX(1)}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.nav-links .nav-button{background:transparent!important;color:#FFC107!important;border:1px solid #FFC107;padding:15px 19px!important}
+.nav-links .nav-button:hover{background:#FFC107!important;color:#061329!important}
+.menu-toggle{border-color:rgba(255,255,255,.4);color:#fff}
+.menu-toggle:hover{background:#FFC107;color:#061329}
+.cw-hero{isolation:isolate;min-height:min(870px,calc(100svh - 42px));background:#061329;display:flex;align-items:stretch;position:relative;overflow:hidden;border-bottom:3px solid #FFC107}
+.cw-hero::after{display:none}
+.cw-hero-architecture{position:absolute;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(ellipse at 55% 65%,#153452 0%,#071b34 48%,#061329 85%)}
+.cw-hero-architecture::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,9,21,.68),transparent 30%,transparent 68%,rgba(2,9,21,.5)),repeating-linear-gradient(90deg,transparent 0 120px,rgba(255,255,255,.025) 121px 122px);pointer-events:none;z-index:2}
+.cw-hero-architecture::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,19,41,.95) 0%,rgba(6,19,41,.88) 23%,rgba(6,19,41,.55) 41%,rgba(6,19,41,.03) 67%,rgba(6,19,41,.14) 85%,rgba(6,19,41,.75) 100%);z-index:3;pointer-events:none}
+.cw-hero-truck{position:absolute;left:5%;right:0;bottom:1%;height:61%;background:url('countrywide-architectural-truck.jpg') center bottom/contain no-repeat;filter:contrast(1.08) saturate(1.04);animation:cw-truck-reveal 1.5s ease-out both;z-index:1}
+.cw-arch-beam{position:absolute;top:-10%;bottom:0;width:23%;background:linear-gradient(100deg,#020b18,#0b2644 55%,#031022);transform:skewX(-14deg);box-shadow:inset -2px 0 rgba(255,193,7,.25),18px 0 55px rgba(0,0,0,.45);z-index:0}
+.cw-beam-left{left:-15%}.cw-beam-right{right:-15%;transform:skewX(14deg);box-shadow:inset 2px 0 rgba(255,193,7,.25),-18px 0 55px rgba(0,0,0,.45)}
+.cw-arch-beam::after{content:"";position:absolute;right:1%;top:8%;width:3px;height:64%;background:#FFC107;box-shadow:0 0 14px #FFC107,0 0 35px rgba(255,193,7,.7);animation:cw-light 5s ease-in-out infinite alternate}
+.cw-beam-right::after{left:1%;right:auto;animation-delay:-2s}
+.cw-arch-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 68%,rgba(255,193,7,.19),transparent 53%);animation:cw-glow 6s ease-in-out infinite alternate}
+.cw-floor{position:absolute;bottom:-18%;left:-25%;width:150%;height:40%;transform:perspective(420px) rotateX(57deg);background:repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,193,7,.12) 96px 97px),repeating-linear-gradient(0deg,transparent 0 95px,rgba(255,255,255,.12) 96px 97px);opacity:.38;z-index:0}
+.cw-hero-inner{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:inherit;padding-top:45px;padding-bottom:36px;z-index:4}
+.cw-hero-topline{text-align:center;font-size:10px;letter-spacing:5px;color:rgba(255,255,255,.73);font-weight:600;display:flex;align-items:center;justify-content:center;gap:18px}
+.cw-small-line{display:block;width:65px;height:1px;background:rgba(255,193,7,.65)}
+.cw-hero-content{width:100%;max-width:1150px;margin:0 auto;transform:translateY(-4%);text-align:center;animation:cw-text-enter 1s .1s both}
+.cw-hero-eyebrow{font-size:11px;letter-spacing:3.5px;font-weight:700;color:#fff;margin-bottom:18px}.cw-hero-eyebrow span{color:#FFC107}
+.cw-hero h1{font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:700;font-size:clamp(46px,7.8vw,116px);letter-spacing:-1.4px;line-height:.91;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.7);margin:0 auto 24px;text-transform:uppercase}
+.cw-hero h1 em{color:#FFC107;font-style:inherit}
+.cw-hero-content p{font-size:14px;line-height:1.7;letter-spacing:.3px;color:#e4e9ef;max-width:600px;margin:0 auto 23px;text-shadow:0 2px 10px #061329}
+.cw-hero-actions{display:flex;gap:13px;align-items:center;justify-content:center;flex-wrap:wrap}
+.cw-hero-actions a{min-height:52px;display:inline-flex;align-items:center;justify-content:center;gap:25px;padding:15px 25px;font-size:10px;letter-spacing:1.4px;font-weight:800;transition:transform .3s,background .3s}
+.cw-action-primary{background:#FFC107;color:#061329}.cw-action-primary:hover{background:#fff;color:#061329;transform:translateY(-3px)}
+.cw-action-secondary{border:1px solid rgba(255,255,255,.7);color:#fff;background:rgba(6,19,41,.5)}.cw-action-secondary:hover{background:#fff;color:#061329;transform:translateY(-3px)}
+.cw-hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:20px;color:#fff}
+.cw-hero-years{display:flex;align-items:center;gap:12px;border-left:2px solid #FFC107;padding-left:17px}.cw-hero-years strong{font-family:'Barlow Condensed',sans-serif;color:#FFC107;font-size:48px;line-height:1}.cw-hero-years span{font-size:9px;letter-spacing:1.7px;line-height:1.8;font-weight:700}
+.cw-hero-scroll{font-size:9px;letter-spacing:2.2px;display:flex;align-items:center;gap:15px}.cw-hero-scroll i{color:#FFC107;font-size:20px;animation:cw-arrow 1.8s ease-in-out infinite}
+@keyframes cw-light{from{opacity:.45;filter:brightness(.7)}to{opacity:1;filter:brightness(1.7)}}
+@keyframes cw-glow{from{opacity:.3}to{opacity:1}}
+@keyframes cw-text-enter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(-4%)}}
+@keyframes cw-truck-reveal{from{opacity:0;transform:scale(1.035)}to{opacity:1;transform:scale(1)}}
+@keyframes cw-arrow{50%{transform:translateY(7px)}}
+@media(max-width:900px){.nav-inner{min-height:76px}.navbar .nav-links{top:76px;background:#061329;border-top:1px solid #FFC107}.nav-links a{color:#fff}.cw-hero{min-height:780px}.cw-hero-truck{left:0;height:48%;bottom:8%;background-size:contain}.cw-hero h1{font-size:clamp(45px,8.5vw,78px)}.cw-hero-content{transform:translateY(-15%)}.cw-hero-architecture::after{background:linear-gradient(180deg,rgba(6,19,41,.96),rgba(6,19,41,.83) 33%,rgba(6,19,41,.1) 69%,rgba(6,19,41,.55) 100%)}}
+@media(max-width:600px){.topbar{min-height:36px}.cw-hero{min-height:730px;min-height:calc(100svh - 112px);max-height:none}.cw-hero-inner{padding-top:30px;padding-bottom:23px}.cw-hero-topline{font-size:7px;letter-spacing:2px;gap:10px}.cw-small-line{width:25px}.cw-hero-content{transform:translateY(-19%)}.cw-hero-eyebrow{font-size:8px;letter-spacing:1.2px;line-height:1.7}.cw-hero h1{font-size:clamp(41px,10.5vw,66px);line-height:.95;letter-spacing:-.5px;margin-bottom:18px}.cw-hero-content p{font-size:12px;max-width:340px;margin-bottom:20px}.cw-hero-actions{gap:10px}.cw-hero-actions a{min-height:44px;padding:12px 14px;font-size:9px;gap:9px}.cw-hero-truck{left:-22%;right:-22%;bottom:12%;height:39%;background-size:contain}.cw-hero-years strong{font-size:37px}.cw-hero-years span{font-size:7px;letter-spacing:.8px}.cw-hero-scroll{font-size:7px;letter-spacing:1px;gap:6px}.cw-hero-scroll i{font-size:15px}.cw-arch-beam{width:32%}}
+@media(prefers-reduced-motion:reduce){.cw-hero *, .cw-hero *::before,.cw-hero *::after{animation:none!important;transition:none!important}}
+
+  
+/* Screenshot-faithful desktop presentation: the approved image is displayed whole,
+   with invisible but accessible navigation hotspots. Mobile uses live HTML text. */
+.topbar, body > nav.navbar {display:none!important}
+.cw-exact{position:relative;width:100%;aspect-ratio:1648/928;background:#061329;overflow:hidden}
+.cw-exact-image{display:block;width:100%;height:100%;object-fit:fill}
+.cw-hotspot{position:absolute;display:block;z-index:5;background:transparent;border:0;cursor:pointer}
+.cw-hotspot:focus-visible{outline:2px solid #FFC107;outline-offset:-2px;background:rgba(255,193,7,.13)}
+.cw-logo{left:6.1%;top:1.8%;width:19%;height:9%}
+.cw-home{left:30.9%;top:3%;width:5%;height:6%}.cw-about{left:37.2%;top:3%;width:7%;height:6%}
+.cw-services{left:44.8%;top:3%;width:7%;height:6%}.cw-gallery{left:52.8%;top:3%;width:7%;height:6%}
+.cw-contact{left:60%;top:3%;width:9%;height:6%}.cw-quote-top{left:76.1%;top:2.8%;width:14.1%;height:6.2%}
+.cw-menu{left:92.7%;top:2.5%;width:4%;height:7%}
+.cw-quote-bottom{left:4.4%;top:79.4%;width:15%;height:6.5%}.cw-services-bottom{left:20.5%;top:79.4%;width:13%;height:6.5%}
+.cw-scroll{right:4.3%;bottom:2.7%;width:13%;height:5.5%}
+.cw-exact-menu{display:none;position:absolute;z-index:8;right:3%;top:10%;background:rgba(6,19,41,.98);border:1px solid #FFC107;min-width:210px;padding:12px}
+.cw-exact-menu.open{display:flex;flex-direction:column}
+.cw-exact-menu a{color:#fff;padding:12px;font-size:12px;letter-spacing:1.4px}.cw-exact-menu a:hover{color:#FFC107}
+.cw-mobile-exact{display:none}
+@media(max-width:700px){
+.cw-exact{display:none}.cw-mobile-exact{display:flex;flex-direction:column;min-height:780px;min-height:100svh;position:relative;background:#061329;color:#fff;overflow:hidden}
+.cw-mobile-exact::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#061329 0%,rgba(6,19,41,.95) 27%,rgba(6,19,41,.15) 65%,#061329 100%),url('countrywide-exact-concept.jpg') 68% center/auto 100% no-repeat;opacity:.75}
+.cw-mobile-nav,.cw-mobile-copy,.cw-mobile-foot{position:relative;z-index:2}
+.cw-mobile-nav{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.25);padding:20px 6%}
+.cw-mobile-brand{font-weight:900;font-size:20px;font-style:italic;color:#FFC107;line-height:1}.cw-mobile-brand small{display:block;font-size:9px;letter-spacing:3px;font-style:normal;color:#fff;margin-top:6px}
+.cw-mobile-nav button{border:1px solid #FFC107;background:transparent;color:#FFC107;padding:8px 12px;font-size:22px}
+.cw-mobile-menu{display:none;position:relative;z-index:5;background:#061329;padding:12px 6%;border-bottom:1px solid #FFC107}.cw-mobile-menu.open{display:flex;flex-direction:column}.cw-mobile-menu a{color:#fff;padding:10px 0;font-size:12px;letter-spacing:1.5px}
+.cw-mobile-copy{padding:64px 6% 0}.cw-mobile-copy>span{font-size:9px;letter-spacing:3px;color:#FFC107}.cw-mobile-copy h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(43px,10.5vw,74px);font-weight:700;font-style:italic;line-height:.96;margin:24px 0 17px;text-shadow:0 4px 20px #061329}.cw-mobile-copy h1 em{color:#FFC107;font-style:inherit}.cw-mobile-copy p{font-size:12px;line-height:1.8;max-width:340px;color:#e4e9ef}
+.cw-mobile-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.cw-mobile-buttons a{padding:13px 14px;font-size:10px;font-weight:800;letter-spacing:.5px;background:#FFC107;color:#061329}.cw-mobile-buttons a+a{background:rgba(6,19,41,.8);border:1px solid #fff;color:#fff}
+.cw-mobile-truck{flex:1;min-height:230px;position:relative;z-index:1;background:url('countrywide-exact-concept.jpg') 74% 80%/auto 145% no-repeat;mask-image:linear-gradient(180deg,transparent 0%,black 20%,black 77%,transparent 100%)}
+.cw-mobile-foot{padding:18px 6% 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:9px;letter-spacing:1px}.cw-mobile-foot b{font-size:26px;color:#FFC107}.cw-mobile-foot a{color:#fff;font-size:9px}
+}
+@media(prefers-reduced-motion:no-preference){.cw-mobile-copy{animation:cw-mobile-in .8s both}@keyframes cw-mobile-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}}
+
+/* Interactive controls aligned to the approved hero artwork */
+.cw-exact-links{position:absolute;inset:0;z-index:20;pointer-events:none}
+.cw-exact-links .cw-hotspot{pointer-events:auto}
+.cw-exact > .cw-hotspot{z-index:21}
+.cw-exact-menu{z-index:30}
+.cw-hotspot:hover{background:rgba(255,193,7,.09)}
+.cw-hotspot:focus-visible{outline:2px solid #FFC107;outline-offset:0}
+.cw-exact-menu a:focus-visible{outline:2px solid #FFC107}
+
+/* COUNTRYWIDE ARCHITECTURAL ABOUT — isolated to this section */
+.cw-about-architecture{position:relative;isolation:isolate;overflow:hidden;background:#061329;color:#fff;padding:110px 0 62px;border-top:1px solid rgba(255,193,7,.55);}
+.cw-about-architecture::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 4% 42%,rgba(28,65,109,.55),transparent 52%),linear-gradient(135deg,#081b35 0%,#061329 58%,#0b1e3d 100%);}
+.cw-about-architecture::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.36;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),rgba(255,255,255,.065) calc(25% - 1px),rgba(255,255,255,.065) 25%);}
+.cw-about-gridline{position:absolute;top:0;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,#ffc107,transparent);opacity:.65}
+.cw-about-topline,.cw-about-bottomline{display:flex;justify-content:space-between;gap:16px;font-size:10px;letter-spacing:2.2px;font-weight:700;color:rgba(255,255,255,.52)}
+.cw-about-topline{padding-bottom:31px;border-bottom:1px solid rgba(255,255,255,.16)}
+.cw-about-topline b{color:#ffc107;padding:0 5px}
+.cw-about-layout{display:grid;grid-template-columns: minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(36px,5.5vw,90px);align-items:center;padding:65px 0 72px}
+.cw-about-visual{position:relative;min-width:0;padding:0 20px 28px 0}
+.cw-about-image-frame{height:clamp(380px,43vw,610px);position:relative;overflow:hidden;background:#102a52;border:1px solid rgba(255,255,255,.18);box-shadow:25px 32px 60px rgba(0,0,0,.35)}
+.cw-about-image-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,19,41,.05) 45%,rgba(6,19,41,.58));pointer-events:none}
+.cw-about-image-frame img{width:100%;height:100%;object-fit:contain;transition:transform .9s cubic-bezier(.2,.7,.2,1);}
+.cw-about-visual:hover img{transform:scale(1.035)}
+.cw-about-corner{position:absolute;width:76px;height:76px;pointer-events:none;z-index:2}
+.cw-about-corner-a{top:-13px;left:-13px;border-left:2px solid #ffc107;border-top:2px solid #ffc107}
+.cw-about-corner-b{right:7px;bottom:15px;border-right:2px solid #ffc107;border-bottom:2px solid #ffc107}
+.cw-about-image-index{position:absolute;top:20px;left:22px;font-size:9px;font-weight:700;letter-spacing:2px;color:#fff;text-shadow:0 1px 6px #000;z-index:3}
+.cw-about-experience{position:absolute;bottom:0;right:-9px;z-index:4;background:#ffc107;color:#0b1e3d;min-width:215px;display:flex;align-items:center;gap:13px;padding:21px 23px;box-shadow:0 15px 35px rgba(0,0,0,.28)}
+.cw-about-experience strong{font-family:'Barlow Condensed',sans-serif;font-size:76px;font-weight:700;line-height:.8;white-space:nowrap}
+.cw-about-experience strong span{font-size:48px}
+.cw-about-experience div{display:grid;gap:5px;font-size:9px;font-weight:800;letter-spacing:1px;line-height:1.2}
+.cw-about-copy{min-width:0}
+.cw-about-eyebrow{display:flex;align-items:center;gap:13px;font-size:10px;font-weight:700;letter-spacing:2.2px;color:#ffc107;margin-bottom:25px}
+.cw-about-eyebrow-line{display:block;flex:0 0 34px;height:2px;background:#ffc107}
+.cw-about-copy h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(48px,5.3vw,84px);font-weight:700;line-height:.91;letter-spacing:-1.4px;color:#fff;margin:0 0 29px;text-transform:uppercase}
+.cw-about-copy h2 em{font-style:normal;color:#ffc107}
+.cw-about-rule{height:1px;width:100%;background:linear-gradient(90deg,#ffc107,rgba(255,255,255,.13) 70%,transparent);margin-bottom:25px}
+.cw-about-copy p{font-size:13px;line-height:1.9;color:rgba(255,255,255,.69);margin:0 0 14px;max-width:600px}
+.cw-about-copy p strong{color:#fff}
+.cw-about-copy .cw-about-lead{font-size:16px;font-weight:700;color:#fff;line-height:1.5;margin-bottom:17px}
+.cw-about-capabilities{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:30px 0 25px;border-top:1px solid rgba(255,255,255,.13);border-left:1px solid rgba(255,255,255,.13)}
+.cw-about-capabilities span{display:flex;align-items:center;gap:9px;min-height:48px;padding:10px 12px;border-right:1px solid rgba(255,255,255,.13);border-bottom:1px solid rgba(255,255,255,.13);font-size:11px;font-weight:700;color:#f5f7fa}
+.cw-about-capabilities i{color:#ffc107;font-size:14px}
+.cw-about-link{display:inline-flex;align-items:center;justify-content:space-between;gap:25px;padding:15px 19px;border:1px solid #ffc107;color:#ffc107;font-size:10px;letter-spacing:1.5px;font-weight:800;transition:background .25s,color .25s}
+.cw-about-link:hover{background:#ffc107;color:#0b1e3d}
+.cw-about-bottomline{padding-top:25px;border-top:1px solid rgba(255,255,255,.16)}
+@media(max-width:950px){.cw-about-architecture{padding-top:80px}.cw-about-layout{grid-template-columns:1fr;gap:62px}.cw-about-image-frame{height:480px}.cw-about-visual{max-width:720px;width:100%;margin:auto}.cw-about-copy h2{font-size:clamp(55px,9vw,82px)}}
+@media(max-width:600px){.cw-about-architecture{padding:65px 0 35px}.cw-about-topline,.cw-about-bottomline{font-size:8px;letter-spacing:1.2px;flex-wrap:wrap}.cw-about-layout{padding:38px 0 48px;gap:45px}.cw-about-visual{padding-right:12px;padding-bottom:20px}.cw-about-image-frame{height:340px}.cw-about-experience{min-width:164px;padding:16px;right:-3px;gap:8px}.cw-about-experience strong{font-size:58px}.cw-about-experience strong span{font-size:36px}.cw-about-experience div{font-size:7px}.cw-about-copy h2{font-size:clamp(46px,11vw,68px);letter-spacing:-.6px}.cw-about-copy p{font-size:12px}.cw-about-copy .cw-about-lead{font-size:14px}.cw-about-capabilities span{font-size:10px;padding:9px 8px}.cw-about-eyebrow{font-size:9px;letter-spacing:1.2px}}
+@media(prefers-reduced-motion:reduce){.cw-about-architecture .cw-about-image-frame img{transition:none}}
+
+/* ============================================================
+   COUNTRYWIDE / ARCHITECTURAL SERVICES — SCOPED DESIGN
+   ============================================================ */
+.cw-services-v2{position:relative;isolation:isolate;overflow:hidden;background:#07172e!important;color:#fff;padding:112px 0 104px;border-top:1px solid rgba(255,193,7,.38);border-bottom:1px solid rgba(255,193,7,.35)}
+.cw-services-v2:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 95% 8%,rgba(29,67,110,.55),transparent 44%),radial-gradient(ellipse at 0 100%,rgba(0,0,0,.5),transparent 52%);z-index:-1}
+.cw-services-v2 .cw-services-blueprint{position:absolute;inset:0;opacity:.26;pointer-events:none;z-index:-1;background-image:linear-gradient(rgba(153,184,226,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(153,184,226,.13) 1px,transparent 1px);background-size:74px 74px;mask-image:linear-gradient(to bottom,transparent,black 16%,black 82%,transparent)}
+.cw-services-v2 .cw-services-shell{position:relative;z-index:1}
+.cw-services-v2 .cw-services-header{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);gap:55px;align-items:end;margin-bottom:52px}
+.cw-services-v2 .cw-services-kicker{display:flex;align-items:center;gap:12px;font-size:10px;font-weight:700;letter-spacing:3px;color:#c7d4e7;margin-bottom:24px}
+.cw-services-v2 .cw-services-kicker>span:first-child{width:3px;height:23px;background:#FFC107;display:block}
+.cw-services-v2 .cw-services-index{color:#FFC107;font-size:10px;letter-spacing:1px;margin-left:16px}
+.cw-services-v2 h2{font-family:"Barlow Condensed",Impact,sans-serif;font-style:normal;font-weight:800;font-size:clamp(54px,6.7vw,108px);line-height:.91;letter-spacing:-.9px;color:#f4f7fc;margin:0;text-transform:uppercase;text-shadow:0 8px 35px rgba(0,0,0,.22)}
+.cw-services-v2 h2 em{font-style:normal;color:#FFC107}
+.cw-services-v2 .cw-services-intro{padding:0 0 8px 26px;border-left:1px solid rgba(255,193,7,.65)}
+.cw-services-v2 .cw-services-intro p{font-size:14px;line-height:1.95;color:#d1d9e5;margin:0 0 20px;max-width:390px}
+.cw-services-v2 .cw-services-intro small{font-size:9px;letter-spacing:2.5px;color:#FFC107;font-weight:700}
+.cw-services-v2 .cw-services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(255,193,7,.2);border:1px solid rgba(255,193,7,.2);box-shadow:0 28px 75px rgba(0,0,0,.25)}
+.cw-services-v2 .cw-service-panel{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:345px;padding:29px 29px 24px;background:linear-gradient(155deg,#102747 0%,#0a1d38 57%,#08172c 100%);overflow:hidden;transition:background .45s ease,box-shadow .45s ease;outline-offset:-3px}
+.cw-services-v2 .cw-service-panel:before{content:"";position:absolute;top:0;left:0;right:100%;height:2px;background:#FFC107;transition:right .5s ease}
+.cw-services-v2 .cw-service-panel:after{content:"";position:absolute;width:240px;height:240px;right:-145px;top:-145px;border:1px solid rgba(255,193,7,.11);border-radius:50%;transition:transform .6s ease,border-color .6s ease;pointer-events:none}
+.cw-services-v2 .cw-service-panel:hover,.cw-services-v2 .cw-service-panel:focus-visible{background:linear-gradient(145deg,#18385e 0%,#0b2445 70%,#091a34 100%);box-shadow:inset 0 0 65px rgba(255,193,7,.035)}
+.cw-services-v2 .cw-service-panel:hover:before,.cw-services-v2 .cw-service-panel:focus-visible:before{right:0}
+.cw-services-v2 .cw-service-panel:hover:after{transform:scale(1.5);border-color:rgba(255,193,7,.32)}
+.cw-services-v2 .cw-service-top{display:flex;align-items:start;justify-content:space-between}
+.cw-services-v2 .cw-service-number{font-family:"Barlow Condensed",Impact,sans-serif;font-size:39px;font-weight:700;line-height:1;color:#FFC107}
+.cw-services-v2 .cw-service-num-slash{font:600 10px "Manrope",sans-serif;letter-spacing:1px;color:#7189a7}
+.cw-services-v2 .cw-service-top i{font-size:27px;color:#FFC107;opacity:.95}
+.cw-services-v2 .cw-service-body{padding:45px 0 25px}
+.cw-services-v2 .cw-service-tag{font-size:9px;letter-spacing:2px;font-weight:700;color:#e5b33b;margin-bottom:12px}
+.cw-services-v2 .cw-service-body h3{font-family:"Barlow Condensed",Impact,sans-serif;font-size:clamp(29px,2.8vw,39px);line-height:1.05;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.2px;margin:0 0 15px}
+.cw-services-v2 .cw-service-body p{font-family:"Manrope",sans-serif;color:#becbdd;font-size:12px;line-height:1.85;max-width:340px;margin:0}
+.cw-services-v2 .cw-service-bottom{border-top:1px solid rgba(213,226,244,.16);padding-top:17px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.cw-services-v2 .cw-service-bottom>span:first-child{font-size:8px;letter-spacing:1.5px;color:#8197b4}
+.cw-services-v2 .cw-service-arrow{font-size:21px;color:#FFC107;line-height:1;transition:transform .3s ease}
+.cw-services-v2 .cw-service-panel:hover .cw-service-arrow{transform:translate(4px,-4px)}
+.cw-services-v2 .cw-services-footer{display:flex;align-items:center;justify-content:space-between;gap:22px;padding-top:30px}
+.cw-services-v2 .cw-services-footer>span{font-size:10px;letter-spacing:2px;color:#bdccdd}
+.cw-services-v2 .cw-services-footer>span i{color:#FFC107;margin-right:8px}
+.cw-services-v2 .cw-services-footer a{display:inline-flex;align-items:center;gap:22px;border:1px solid #FFC107;padding:15px 20px;color:#FFC107;text-decoration:none;font-size:11px;font-weight:800;letter-spacing:1.1px;transition:background .3s,color .3s}
+.cw-services-v2 .cw-services-footer a:hover{background:#FFC107;color:#0B1E3D}
+.cw-services-v2 .cw-services-footer a span{font-size:19px}
+@media(max-width:980px){.cw-services-v2 .cw-services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cw-services-v2 .cw-services-header{grid-template-columns:1fr;gap:22px}.cw-services-v2 .cw-services-intro{max-width:540px}}
+@media(max-width:620px){.cw-services-v2{padding:72px 0 68px}.cw-services-v2 h2{font-size:clamp(48px,12vw,76px)}.cw-services-v2 .cw-services-grid{grid-template-columns:1fr}.cw-services-v2 .cw-service-panel{min-height:270px;padding:25px}.cw-services-v2 .cw-service-body{padding:35px 0 22px}.cw-services-v2 .cw-services-header{margin-bottom:35px}.cw-services-v2 .cw-services-footer{align-items:stretch;flex-direction:column}.cw-services-v2 .cw-services-footer a{justify-content:space-between}.cw-services-v2 .cw-services-kicker{font-size:8px;letter-spacing:2px}}
+@media(prefers-reduced-motion:reduce){.cw-services-v2 .cw-service-panel,.cw-services-v2 .cw-service-panel:before,.cw-services-v2 .cw-service-panel:after,.cw-services-v2 .cw-service-arrow{transition:none!important}}
+
+
+/* COUNTRYWIDE — NATIONWIDE ARCHITECTURAL REDESIGN */
+.nationwide.cw-reach{background:#06172f;padding:clamp(85px,10vw,150px) 0;isolation:isolate;border-top:1px solid rgba(255,193,7,.22);border-bottom:1px solid rgba(255,193,7,.22)}
+.nationwide.cw-reach::before,.nationwide.cw-reach::after{display:none}
+.cw-reach-grid{position:absolute;inset:0;z-index:-2;background-image:linear-gradient(rgba(131,166,203,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(131,166,203,.055) 1px,transparent 1px);background-size:68px 68px;mask-image:linear-gradient(90deg,#000,transparent 96%)}
+.cw-reach-glow{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 76% 45%,rgba(255,193,7,.09),transparent 46%),linear-gradient(130deg,transparent 55%,rgba(18,52,86,.45))}
+.cw-reach-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(35px,6vw,110px);align-items:center}
+.cw-reach-copy{position:relative;z-index:1}.cw-reach-eyebrow{display:flex;gap:12px;align-items:center;color:#ffc107;font:700 10px/1.5 'Manrope',sans-serif;letter-spacing:2.5px;margin-bottom:30px}.cw-reach-index{color:#91a4bd;margin-left:auto;font-size:9px;white-space:nowrap}.cw-reach-pulse{height:7px;width:7px;background:#ffc107;box-shadow:0 0 0 5px rgba(255,193,7,.12);border-radius:50%;animation:cwPulse 3s ease-in-out infinite}
+.nationwide.cw-reach h2{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(56px,6.4vw,102px);line-height:.88;letter-spacing:-1px;color:white;margin:0}.nationwide.cw-reach h2 span{color:#ffc107}
+.nationwide.cw-reach p{max-width:520px;color:#b8c6d7;font-size:14px;line-height:1.9;margin:32px 0 35px}
+.cw-reach-button{display:inline-flex;align-items:center;gap:35px;padding:18px 24px;background:#ffc107;color:#06172f;font:800 11px/1.2 'Manrope',sans-serif;letter-spacing:1.2px;text-decoration:none;transition:transform .25s,background .25s}.cw-reach-button:hover{background:#fff;color:#06172f;transform:translateY(-3px)}.cw-reach-button span{font-size:20px;font-weight:400}
+.cw-reach-visual{border:1px solid rgba(147,176,209,.23);background:linear-gradient(135deg,rgba(14,42,72,.92),rgba(5,20,39,.96));box-shadow:0 28px 75px rgba(0,0,0,.24);position:relative;min-width:0}.cw-reach-visual::before,.cw-reach-visual::after{content:'';position:absolute;width:32px;height:32px;pointer-events:none}.cw-reach-visual::before{top:-1px;left:-1px;border-top:2px solid #ffc107;border-left:2px solid #ffc107}.cw-reach-visual::after{right:-1px;bottom:-1px;border-bottom:2px solid #ffc107;border-right:2px solid #ffc107}
+.cw-reach-visual-top,.cw-reach-visual-bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:20px 24px;color:#aebdd1;font:700 9px/1.5 'Manrope',sans-serif;letter-spacing:1.7px}.cw-reach-visual-top{border-bottom:1px solid rgba(147,176,209,.16)}.cw-reach-visual-bottom{border-top:1px solid rgba(147,176,209,.16)}.cw-reach-visual-bottom i{color:#ffc107}.cw-reach-map{padding:8px 20px}.cw-reach-map svg{display:block;width:100%;height:auto;max-height:360px}.cw-reach-routes path{stroke-dasharray:7 6;animation:cwRoute 18s linear infinite}.cw-reach-ring{transform-origin:283px 226px;animation:cwPulseRing 3s ease-out infinite}.cw-reach-bottomline{position:absolute;bottom:0;left:0;width:100%;height:2px;background:rgba(255,193,7,.1)}.cw-reach-bottomline span{display:block;width:22%;height:100%;background:#ffc107;box-shadow:0 0 18px #ffc107;animation:cwScan 9s ease-in-out infinite alternate}
+@keyframes cwPulse{50%{box-shadow:0 0 0 9px rgba(255,193,7,.04)}}@keyframes cwRoute{to{stroke-dashoffset:-260}}@keyframes cwPulseRing{50%{opacity:.28;transform:scale(1.7)}}@keyframes cwScan{to{transform:translateX(350%)}}
+@media(max-width:900px){.cw-reach-inner{grid-template-columns:1fr;gap:45px}.cw-reach-visual{max-width:650px;width:100%}.nationwide.cw-reach h2{font-size:clamp(58px,10vw,90px)}}
+@media(max-width:550px){.nationwide.cw-reach{padding:75px 0}.cw-reach-eyebrow{font-size:8px;letter-spacing:1.4px;gap:9px}.cw-reach-index{font-size:7px}.nationwide.cw-reach h2{font-size:clamp(48px,13vw,70px)}.nationwide.cw-reach p{font-size:13px}.cw-reach-button{width:100%;justify-content:space-between}.cw-reach-visual-top,.cw-reach-visual-bottom{font-size:7px;letter-spacing:.6px;padding:14px 12px}.cw-reach-map{padding:0 6px}}
+@media(prefers-reduced-motion:reduce){.cw-reach-pulse,.cw-reach-routes path,.cw-reach-ring,.cw-reach-bottomline span{animation:none!important}}
+
+
+/* COUNTRYWIDE — ARCHITECTURAL INDUSTRIES SECTION */
+.sectors.cw-industries{position:relative;isolation:isolate;overflow:hidden;background:#07172f;color:#fff;padding:clamp(85px,9vw,140px) 0 85px;border-top:1px solid rgba(255,193,7,.2);border-bottom:1px solid rgba(255,193,7,.25)}
+.sectors.cw-industries:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(255,193,7,.035) 1px,transparent 1px),linear-gradient(rgba(255,193,7,.025) 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+.cw-industries-inner{position:relative}.cw-industries-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:55px}.cw-industries-kicker{display:flex;align-items:center;gap:14px;color:#ffc107;font-size:10px;font-weight:700;letter-spacing:3px}.cw-industries-kicker-line{display:inline-block;width:35px;height:2px;background:#ffc107}.cw-industries-kicker small{color:#8294ab;font-size:9px;letter-spacing:2px}.cw-industries-heading h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(58px,7vw,112px);line-height:.84;letter-spacing:-1px;font-weight:700;margin:24px 0 0;color:#fff}.cw-industries-heading h2 em{font-style:normal;color:#ffc107}.cw-industries-heading p{max-width:365px;color:#b4c2d3;line-height:1.85;font-size:14px;margin:0 0 5px}.cw-industries-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.cw-industry{height:clamp(380px,37vw,510px);display:block;position:relative;overflow:hidden;background:#0b1e3d;border:1px solid rgba(255,255,255,.15);color:#fff;text-decoration:none!important;isolation:isolate}.cw-industry img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.72) brightness(.7);transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .7s}.cw-industry-shade{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(4,15,32,.65),transparent 38%,rgba(3,14,32,.97));transition:background .3s}.cw-industry:after{content:"";position:absolute;inset:0;border:1px solid transparent;pointer-events:none;transition:border-color .3s}.cw-industry:hover:after,.cw-industry:focus-visible:after{border-color:#ffc107}.cw-industry:hover img,.cw-industry:focus-visible img{transform:scale(1.065);filter:saturate(.95) brightness(.87)}.cw-industry-top{position:absolute;top:25px;left:23px;right:23px;display:flex;justify-content:space-between;align-items:center;color:#dce5ef;font-size:9px;letter-spacing:2px;font-weight:600}.cw-industry-top i{font-size:20px;color:#ffc107}.cw-industry-bottom{position:absolute;bottom:30px;left:23px;right:15px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}.cw-industry-icon{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(255,193,7,.5);color:#ffc107;font-size:19px;margin-bottom:11px}.cw-industry-bottom strong{font-family:'Barlow Condensed',sans-serif;font-size:clamp(32px,3vw,48px);line-height:1;letter-spacing:.5px;color:white}.cw-industry-bottom small{font-size:8px;letter-spacing:1.4px;color:#c1ccda}.cw-industries-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.14);margin-top:35px;padding-top:25px;font-size:10px;letter-spacing:2px;color:#8b9fb5}.cw-industries-footer a{color:#ffc107;text-decoration:none;font-weight:700}.cw-industries-footer a:hover{color:#fff}.cw-industries-footer i{margin-left:10px}
+@media(max-width:1100px){.cw-industries-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cw-industry{height:440px}.cw-industries-heading{align-items:start;flex-direction:column;gap:24px}}
+@media(max-width:600px){.sectors.cw-industries{padding:80px 0 60px}.cw-industries-heading h2{font-size:clamp(52px,12vw,76px)}.cw-industries-kicker{font-size:8px;letter-spacing:1.5px;gap:8px}.cw-industries-kicker small{font-size:7px;letter-spacing:1px}.cw-industries-grid{grid-template-columns:1fr;gap:13px}.cw-industry{height:350px}.cw-industry-bottom strong{font-size:43px}.cw-industries-footer{align-items:start;flex-direction:column;font-size:8px;line-height:1.7}.cw-industries-heading{margin-bottom:36px}}
+@media(prefers-reduced-motion:reduce){.cw-industry img{transition:none}}
+
+/* =========================================================
+   COUNTRYWIDE / FUTURISTIC FLEET GALLERY — SCOPED STYLES
+========================================================= */
+.cw-fleet{position:relative;overflow:hidden;background:#061329!important;color:#fff;padding:112px 0 100px;border-top:1px solid rgba(255,193,7,.22);border-bottom:1px solid rgba(255,193,7,.3)}
+.cw-fleet:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.27;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(90deg,transparent,#000 25%,#000 75%,transparent)}
+.cw-fleet:after{content:"";position:absolute;pointer-events:none;width:540px;height:540px;top:-320px;right:-180px;background:radial-gradient(circle,rgba(255,193,7,.11),transparent 65%)}
+.cw-fleet .cw-fleet-inner{position:relative;z-index:1}
+.cw-fleet-top{display:flex;align-items:end;justify-content:space-between;gap:45px;margin-bottom:45px}
+.cw-fleet-eyebrow{display:flex;align-items:center;gap:12px;color:#ffc107;font:700 10px/1.4 Manrope,sans-serif;letter-spacing:2.4px;margin-bottom:23px}
+.cw-fleet-signal{width:7px;height:7px;background:#ffc107;box-shadow:0 0 18px rgba(255,193,7,.7)}
+.cw-fleet-index{color:#8194ad;margin-left:8px}
+.cw-fleet-title{margin:0;font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(55px,7.1vw,112px);font-weight:800;letter-spacing:-1.5px;line-height:.86;text-transform:uppercase}
+.cw-fleet-title span{display:block;color:#ffc107}
+.cw-fleet-intro{max-width:320px;margin:0 0 4px;color:#b3c4d8;font-size:13px;line-height:1.9}
+.cw-fleet-system{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid rgba(255,193,7,.32);color:#8fa6c1;font:700 9px/1.5 Manrope,sans-serif;letter-spacing:2.1px}
+.cw-fleet-grid{display:grid;grid-template-columns:1.13fr .87fr 1fr;grid-template-rows:260px 260px;gap:13px}
+.cw-fleet-tile{margin:0;position:relative;isolation:isolate;overflow:hidden;min-width:0;min-height:0;border:1px solid rgba(255,255,255,.15);background:#0b1e3d}
+.cw-fleet-tile-main{grid-row:span 2}.cw-fleet-tile-wide{grid-column:span 2}
+.cw-fleet-tile:before{content:"";position:absolute;z-index:2;inset:12px;border-top:1px solid rgba(255,193,7,.36);border-left:1px solid rgba(255,193,7,.2);opacity:.6;pointer-events:none;transition:opacity .35s}
+.cw-fleet-tile:after{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(180deg,rgba(6,19,41,.12) 25%,rgba(6,19,41,.18) 50%,rgba(6,19,41,.95) 100%);pointer-events:none}
+.cw-fleet-tile img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .85s cubic-bezier(.2,.7,.2,1),filter .7s;filter:saturate(.88) contrast(1.07)}
+.cw-fleet-tile:hover img{transform:scale(1.065);filter:saturate(1.08) contrast(1.05)}
+.cw-fleet-tile:hover:before{opacity:1}
+.cw-fleet-tile figcaption{position:absolute;z-index:3;bottom:0;left:0;right:0;padding:25px 26px 27px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end}
+.cw-fleet-number{grid-column:1/-1;color:#ffc107;font:700 9px/1.4 Manrope,sans-serif;letter-spacing:2.3px}
+.cw-fleet-tile figcaption strong{font:800 clamp(25px,2.7vw,41px)/.98 'Barlow Condensed',Impact,sans-serif;letter-spacing:.4px}
+.cw-fleet-arrow{display:grid;place-items:center;width:30px;height:30px;border:1px solid rgba(255,193,7,.6);color:#ffc107;font-size:18px;transition:background .3s,color .3s,transform .3s}
+.cw-fleet-tile:hover .cw-fleet-arrow{background:#ffc107;color:#061329;transform:translate(2px,-2px)}
+.cw-fleet-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid rgba(255,193,7,.3);padding:24px 0 17px;color:#839ab7;font:700 9px/1.6 Manrope,sans-serif;letter-spacing:2px}
+.cw-fleet-bottom a{color:#ffc107!important;text-decoration:none;font-size:10px;letter-spacing:1.4px}.cw-fleet-bottom a span{font-size:18px;margin-left:12px}
+@media(max-width:900px){.cw-fleet{padding:80px 0}.cw-fleet-grid{grid-template-columns:1fr 1fr;grid-template-rows:300px 260px 260px}.cw-fleet-tile-main{grid-row:span 2}.cw-fleet-tile-wide{grid-column:span 2}.cw-fleet-top{align-items:start;flex-direction:column;gap:22px}.cw-fleet-intro{max-width:540px}}
+@media(max-width:600px){.cw-fleet{padding:65px 0 60px}.cw-fleet-title{font-size:clamp(48px,13vw,75px)}.cw-fleet-eyebrow{font-size:8px;letter-spacing:1.3px;flex-wrap:wrap}.cw-fleet-system{font-size:7px;letter-spacing:1px}.cw-fleet-grid{grid-template-columns:1fr;grid-template-rows:none;gap:12px}.cw-fleet-tile,.cw-fleet-tile-main,.cw-fleet-tile-wide{grid-row:auto;grid-column:auto;height:280px}.cw-fleet-tile-main{height:350px}.cw-fleet-tile img{object-fit:cover}.cw-fleet-tile figcaption{padding:22px}.cw-fleet-tile figcaption strong{font-size:32px}.cw-fleet-bottom{align-items:flex-start;flex-direction:column;gap:12px}}
+@media(prefers-reduced-motion:reduce){.cw-fleet-tile img,.cw-fleet-arrow{transition:none!important}}
+
+</style>
+<style id="cw-approved-about-styles">.cw-about-approved{background:#06172f;color:#fff;position:relative;overflow:hidden;scroll-margin-top:80px}.cw-about-art img{display:block;width:100%;height:auto}.cw-about-mobile-content{display:none}@media(max-width:720px){.cw-about-art{height:360px;overflow:hidden;position:relative}.cw-about-art img{width:100%;height:100%;object-fit:cover;object-position:70% center}.cw-about-art:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#06172f)}.cw-about-mobile-content{display:block;padding:0 22px 55px;position:relative;margin-top:-12px}.cw-about-mob-kicker{font-size:11px;letter-spacing:.32em;color:#ffc107;border-left:3px solid #ffc107;padding-left:12px;margin-bottom:22px}.cw-about-mobile-content h2{font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(40px,11vw,68px);line-height:.94;font-weight:800;letter-spacing:-.02em;margin:0 0 20px}.cw-about-mobile-content h2 span{color:#ffc107}.cw-about-mob-tagline{font-size:11px!important;letter-spacing:.2em;color:#fff!important;font-weight:700}.cw-about-mobile-content p{font-size:14px;line-height:1.8;color:#cbd5e1;margin-bottom:17px}.cw-about-mob-experience{display:flex;gap:15px;align-items:center;border:1px solid rgba(255,193,7,.55);padding:14px 18px;margin:26px 0}.cw-about-mob-experience strong{font:800 55px 'Barlow Condensed',Impact,sans-serif;color:#ffc107}.cw-about-mob-experience span{font-size:12px;letter-spacing:.14em;font-weight:700}.cw-about-mob-features{display:grid;gap:0}.cw-about-mob-features>div{display:grid;grid-template-columns:36px 1fr;gap:4px 12px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.15)}.cw-about-mob-features i{grid-row:span 2;font-size:27px;color:#ffc107}.cw-about-mob-features b{font-size:12px;letter-spacing:.12em}.cw-about-mob-features small{font-size:12px;color:#cbd5e1}}@media(min-width:721px){.cw-about-approved{line-height:0}.cw-about-art img{max-width:100%}}</style><style id="cw-scene-transition-style">
+.cw-scene-transition{height:112px;position:relative;overflow:hidden;background:linear-gradient(180deg,#061329 0%,#0b1e3d 48%,#061329 100%);border-top:1px solid rgba(255,193,7,.48);border-bottom:1px solid rgba(255,193,7,.28)}
+.cw-scene-transition:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(255,193,7,.06) 50%,transparent 100%),repeating-linear-gradient(90deg,transparent 0,transparent calc(20% - 1px),rgba(255,255,255,.055) calc(20% - 1px),rgba(255,255,255,.055) 20%)}
+.cw-scene-transition:after{content:"";position:absolute;top:50%;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,193,7,.5) 38%,rgba(255,193,7,.5) 62%,transparent)}
+.cw-scene-transition-mark{position:absolute;z-index:1;top:50%;left:50%;width:17px;height:17px;transform:translate(-50%,-50%) rotate(45deg);border:1px solid #ffc107;background:#0b1e3d;box-shadow:0 0 25px rgba(255,193,7,.18)}
+@media(max-width:720px){.cw-scene-transition{height:66px}.cw-scene-transition-mark{width:12px;height:12px}}
+
+/* =========================================================
+   WHY COUNTRYWIDE — FUTURISTIC INDUSTRIAL EDITORIAL
+   Scoped styles: other sections remain untouched.
+========================================================= */
+.cw-why-future{position:relative;isolation:isolate;overflow:hidden;background:#06152c!important;color:#fff!important;padding:112px 0 90px!important;border-top:1px solid rgba(255,193,7,.28);border-bottom:1px solid rgba(255,193,7,.3)}
+.cw-why-future:before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px);background-size:76px 76px;mask-image:linear-gradient(90deg,transparent,#000 35%,#000 80%,transparent)}
+.cw-why-ambient{position:absolute;inset:-20% -10%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 15% 45%,rgba(19,68,123,.38),transparent 52%),radial-gradient(ellipse at 93% 8%,rgba(255,193,7,.07),transparent 39%)}
+.cw-why-wrap{position:relative;max-width:1330px!important}
+.cw-why-heading{margin-bottom:54px;max-width:980px}
+.cw-why-eyebrow{display:flex;align-items:center;gap:15px;color:#ffc107;font-size:10px;letter-spacing:3px;font-weight:700;margin-bottom:23px}
+.cw-why-rule{display:inline-block;width:30px;height:2px;background:#ffc107}
+.cw-why-index{margin-left:auto;color:#93a6bd;font-size:9px;letter-spacing:2px}
+.cw-why-heading h2{margin:0!important;font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif!important;font-weight:800!important;line-height:.92!important;letter-spacing:-1.4px!important;font-size:clamp(48px,6.4vw,104px)!important;color:#f5f7fa!important;text-transform:uppercase}
+.cw-why-heading h2 em{font-style:normal;color:#ffc107}
+.cw-why-heading>p{max-width:700px;margin:25px 0 0;color:#b6c5d7;font-size:15px;line-height:1.85}
+.cw-why-layout{display:grid;grid-template-columns:1.08fr 1fr;gap:0;border:1px solid rgba(255,255,255,.12);background:#081b35}
+.cw-why-visual{position:relative;min-height:570px;overflow:hidden;background:#071529}
+.cw-why-photo{position:absolute;inset:0;background:#071529 url('img7.jpeg') center center/contain no-repeat;filter:contrast(1.08) saturate(.9);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.cw-why-visual:hover .cw-why-photo{transform:scale(1.055)}
+.cw-why-photo-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,12,26,.96),transparent 55%),linear-gradient(90deg,rgba(3,12,26,.27),transparent 55%)}
+.cw-why-visual-top{position:absolute;top:27px;left:28px;right:28px;display:flex;justify-content:space-between;gap:12px;font-size:9px;letter-spacing:2px;color:#fff;text-shadow:0 1px 4px #000}
+.cw-why-frame{position:absolute;width:50px;height:50px;pointer-events:none}
+.cw-why-frame-a{top:15px;left:15px;border-top:2px solid #ffc107;border-left:2px solid #ffc107}
+.cw-why-frame-b{bottom:15px;right:15px;border-bottom:2px solid #ffc107;border-right:2px solid #ffc107}
+.cw-why-photo-caption{position:absolute;bottom:40px;left:34px;display:flex;align-items:stretch;gap:18px}
+.cw-why-vertical-line{width:3px;background:#ffc107;flex-shrink:0}
+.cw-why-photo-caption strong{display:block;font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(27px,3vw,44px);line-height:1.03;letter-spacing:.4px;color:white}
+.cw-why-photo-caption small{display:block;color:#cbd7e5;font-size:9px;letter-spacing:2px;margin-top:13px}
+.cw-why-photo-glow{position:absolute;top:-35%;left:-50%;height:170%;width:24%;background:linear-gradient(90deg,transparent,rgba(255,193,7,.13),transparent);transform:rotate(19deg);animation:cwWhySweep 11s ease-in-out infinite;pointer-events:none}
+@keyframes cwWhySweep{0%,64%,100%{left:-50%}82%{left:130%}}
+.cw-why-points{display:flex;flex-direction:column;padding:20px 34px 28px}
+.cw-why-point{display:grid;grid-template-columns:42px 1fr 18px;gap:18px;align-items:start;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.14);transition:padding-left .3s ease,background .3s ease}
+.cw-why-point:hover{padding-left:9px}
+.cw-why-point-number{font-family:'Barlow Condensed',Impact,sans-serif;color:#ffc107;font-size:28px;line-height:1}
+.cw-why-point h3{font-family:'Barlow Condensed',Impact,sans-serif!important;color:#fff!important;font-size:clamp(20px,2vw,27px)!important;letter-spacing:.8px!important;margin:0 0 8px!important;line-height:1.05!important}
+.cw-why-point p{color:#aebed2!important;font-size:12px!important;line-height:1.7!important;margin:0!important}
+.cw-why-point-mark{color:#ffc107;font-size:18px;opacity:.75}
+.cw-why-cta{margin-top:auto;padding:24px 0 0;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#ffc107!important;text-decoration:none!important;font-size:11px;font-weight:800;letter-spacing:1.5px}
+.cw-why-cta span{font-size:24px;transition:transform .25s}
+.cw-why-cta:hover span{transform:translate(4px,-4px)}
+.cw-why-bottom{display:flex;justify-content:space-between;gap:20px;color:#8598b1;font-size:9px;letter-spacing:2px;padding-top:25px}
+@media(max-width:900px){.cw-why-future{padding:80px 0 65px!important}.cw-why-layout{grid-template-columns:1fr}.cw-why-visual{min-height:440px}.cw-why-points{padding:12px 28px 30px}.cw-why-heading{margin-bottom:38px}}
+@media(max-width:600px){.cw-why-future{padding:65px 0 50px!important}.cw-why-eyebrow{font-size:8px;letter-spacing:1.5px}.cw-why-index{display:none}.cw-why-heading h2{font-size:clamp(44px,12vw,70px)!important}.cw-why-heading>p{font-size:13px}.cw-why-visual{min-height:350px}.cw-why-visual-top{font-size:7px;letter-spacing:1px;left:22px;right:20px}.cw-why-photo-caption{left:23px;bottom:29px}.cw-why-photo-caption strong{font-size:29px}.cw-why-photo-caption small{font-size:7px}.cw-why-points{padding:8px 20px 24px}.cw-why-point{grid-template-columns:31px 1fr 13px;gap:12px;padding:24px 0}.cw-why-point-number{font-size:24px}.cw-why-point h3{font-size:21px!important}.cw-why-bottom{font-size:7px;letter-spacing:1px;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.cw-why-photo-glow{animation:none}.cw-why-photo,.cw-why-point,.cw-why-cta span{transition:none}}
+</style>
+<style>
+
+/* COUNTRYWIDE — CINEMATIC CONTACT / QUOTE (SCOPED) */
+#contact.contact{position:relative;isolation:isolate;overflow:hidden;padding:125px 0 135px;background:radial-gradient(ellipse at 88% 10%,rgba(255,193,7,.075),transparent 37%),linear-gradient(130deg,#061329,#0b1e3d 55%,#061329);border-top:1px solid rgba(255,193,7,.32)}
+#contact.contact:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.38;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:74px 74px;mask-image:linear-gradient(90deg,black,transparent 85%)}
+#contact.contact:after{content:"";position:absolute;top:0;left:5%;width:150px;height:2px;background:#ffc107;box-shadow:0 0 25px rgba(255,193,7,.7)}
+#contact .contact-grid{grid-template-columns:minmax(0, .84fr) minmax(0,1.16fr);gap:clamp(36px,6vw,95px);align-items:start}
+#contact .section-label{font-size:10px;letter-spacing:3.2px;color:#ffc107;margin-bottom:27px}
+#contact .section-title{font-size:clamp(48px,5.7vw,92px);line-height:.94;letter-spacing:-2px;text-transform:uppercase;margin-bottom:24px}
+#contact .section-title span{color:#ffc107}
+#contact .contact-intro{max-width:490px;font-size:15px;line-height:1.9;margin:24px 0 38px;color:#b7c7dd}
+#contact .cw-contact-meta{font-size:10px;letter-spacing:2.4px;color:#ffc107;border-top:1px solid rgba(255,193,7,.35);padding-top:20px;margin:0 0 22px;text-transform:uppercase}
+#contact .contact-details{gap:0;border-top:1px solid rgba(255,255,255,.13)}
+#contact .contact-item{padding:19px 0;gap:17px;border-bottom:1px solid rgba(255,255,255,.13);align-items:center;transition:padding .3s ease,background .3s ease}
+#contact .contact-item:hover{padding-left:10px;background:rgba(255,193,7,.035)}
+#contact .contact-icon{width:50px;height:50px;flex-basis:50px;background:#0d2848;border:1px solid rgba(255,193,7,.32);border-left:2px solid #ffc107}
+#contact .contact-item small{font-size:9px;letter-spacing:2px;margin-bottom:7px}
+#contact .contact-item a,#contact .contact-item span{font-size:clamp(12px,1.2vw,15px);overflow-wrap:anywhere}
+#contact .contact-box{padding:clamp(24px,3.6vw,52px);background:linear-gradient(160deg,#102b4d,#071a33 78%);color:#fff;border:1px solid rgba(255,193,7,.27);box-shadow:0 30px 85px rgba(0,0,0,.35);overflow:hidden}
+#contact .contact-box:before{height:3px;background:linear-gradient(90deg,#ffc107,rgba(255,193,7,.05));}
+#contact .contact-box:after{content:"";position:absolute;right:-38px;top:-38px;width:130px;height:130px;border:1px solid rgba(255,193,7,.12);transform:rotate(45deg);pointer-events:none}
+#contact .cw-form-heading{position:relative;margin:0 0 29px;padding-bottom:25px;border-bottom:1px solid rgba(255,255,255,.13)}
+#contact .cw-form-heading small{display:block;color:#ffc107;font-size:9px;letter-spacing:2.7px;font-weight:700;margin-bottom:13px}
+#contact .cw-form-heading h3{color:#fff;font-size:clamp(29px,3vw,42px);line-height:1.05;margin:0;text-transform:uppercase;letter-spacing:-.6px}
+#contact .cw-form-heading p{font-size:12px;color:#a8bfd6;line-height:1.7;margin:12px 0 0}
+#contact .quote-form{margin-top:0;gap:20px 17px}
+#contact .quote-form label{color:#d7e4f3;font-size:10px;letter-spacing:1.15px;margin-bottom:9px}
+#contact .quote-form input:not([type=hidden]),#contact .quote-form textarea,#contact .quote-form select{width:100%;background:#07172c!important;color:#fff!important;border:1px solid rgba(178,202,230,.24)!important;border-radius:0!important;outline:0;min-height:49px;padding:13px 15px;transition:border-color .25s ease,box-shadow .25s ease}
+#contact .quote-form input::placeholder,#contact .quote-form textarea::placeholder{color:#8299b0!important;opacity:1}
+#contact .quote-form input:focus,#contact .quote-form textarea:focus{border-color:#ffc107!important;box-shadow:0 0 0 2px rgba(255,193,7,.12)}
+#contact .quote-form input[type=date]{color-scheme:dark}
+#contact .privacy-notice{grid-column:1/-1;background:rgba(255,193,7,.045);border:1px solid rgba(255,193,7,.17);padding:15px;color:#aebed0}
+#contact .privacy-notice p,#contact .privacy-notice strong{color:#b9cce1}
+#contact .privacy-notice i{color:#ffc107}
+#contact .quote-submit{grid-column:1/-1;background:#ffc107!important;color:#061329!important;border:1px solid #ffc107!important;font-size:11px;font-weight:800;letter-spacing:1.5px;min-height:58px;text-transform:uppercase;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+#contact .quote-submit:hover{background:#ffe071!important;transform:translateY(-3px);box-shadow:0 14px 35px rgba(255,193,7,.15)}
+@media(max-width:900px){#contact .contact-grid{grid-template-columns:1fr;gap:45px}#contact.contact{padding:90px 0 100px}}
+@media(max-width:600px){#contact.contact{padding:75px 0 85px}#contact .section-title{font-size:clamp(45px,12vw,70px)}#contact .contact-box{padding:23px 18px}#contact .quote-form{grid-template-columns:1fr}#contact .quote-form-group{grid-column:1/-1}#contact .contact-item{padding:16px 0}}
+@media(prefers-reduced-motion:reduce){#contact .contact-item,#contact .quote-submit{transition:none}}
+
+</style>
+<style>
+
+/* =========================================================
+   COUNTRYWIDE — CINEMATIC ARCHITECTURAL FOOTER
+   Scoped to .cw-footer. All other sections remain unchanged.
+========================================================= */
+footer.cw-footer{position:relative;isolation:isolate;overflow:hidden;background:#061329;color:#e8edf6;padding:0;border:0;font-family:"Manrope",sans-serif}
+footer.cw-footer::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 8% 20%,rgba(30,76,126,.28),transparent 48%),linear-gradient(90deg,rgba(255,255,255,.026) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px);background-size:auto,100px 100px,100px 100px;mask-image:linear-gradient(to bottom,#000,transparent 95%)}
+.cw-footer-topline{height:4px;display:flex;gap:5px;background:#0b1e3d}
+.cw-footer-topline span:nth-child(1){width:13%;background:#ffc107}.cw-footer-topline span:nth-child(2){width:3%;background:#fff}.cw-footer-topline span:nth-child(3){width:84%;background:linear-gradient(90deg,#ffc10755,transparent)}
+footer.cw-footer .cw-footer-main{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(170px,.65fr) minmax(0,1fr);gap:clamp(28px,5vw,90px);padding-top:clamp(65px,7vw,110px);padding-bottom:clamp(65px,7vw,100px);align-items:start}
+.cw-footer-eyebrow{font-size:9px;letter-spacing:2.3px;font-weight:800;color:#b2c4da;display:flex;align-items:center;gap:12px;margin-bottom:26px}
+.cw-footer-signal{width:7px;height:7px;background:#ffc107;box-shadow:0 0 15px #ffc10780;display:inline-block;flex:none}
+.cw-footer-wordmark{display:inline-flex;flex-direction:column;font-family:"Barlow Condensed",sans-serif;font-weight:800;letter-spacing:.02em;font-size:clamp(40px,4vw,64px);line-height:.83;color:#fff;text-decoration:none}
+.cw-footer-wordmark span{font-size:.43em;letter-spacing:.17em;color:#ffc107;margin-top:12px}
+footer.cw-footer .cw-footer-brand>p{font-size:13px;line-height:1.95;max-width:390px;color:#aabbd0;margin:30px 0 26px}
+.cw-footer-brand-rule{border-left:2px solid #ffc107;padding-left:14px;display:flex;flex-wrap:wrap;gap:5px 12px;color:#dce7f2;font-family:"Barlow Condensed",sans-serif;font-size:16px;font-weight:700;letter-spacing:1.3px}
+footer.cw-footer h3{font-family:"Barlow Condensed",sans-serif;font-size:21px;letter-spacing:1.2px;font-weight:700;color:#fff;margin:0 0 24px}
+.cw-footer-navigation h3{display:flex;justify-content:space-between;max-width:250px}.cw-footer-navigation h3 span{color:#ffc107}
+.cw-footer-navigation>a{display:flex;align-items:center;justify-content:space-between;gap:15px;max-width:250px;border-bottom:1px solid #ffffff24;padding:12px 0;color:#c6d2e2;text-decoration:none;font-size:12px;font-weight:650;transition:color .25s,padding-left .25s}
+.cw-footer-navigation>a span{font-size:9px;color:#788da8;letter-spacing:1px}
+.cw-footer-navigation>a:hover{color:#ffc107;padding-left:6px}
+footer.cw-footer .cw-footer-action>p{font-size:12px;line-height:1.9;color:#aabbd0;margin:0 0 25px;max-width:330px}
+.cw-footer-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#ffc107;color:#061329;text-decoration:none;padding:19px 20px;font-size:10px;letter-spacing:1.2px;font-weight:900;transition:background .25s,transform .25s}
+.cw-footer-cta span:last-child{font-size:19px;line-height:1}.cw-footer-cta:hover{background:#ffdb60;color:#061329;transform:translateY(-3px)}
+.cw-footer-location{display:flex;align-items:flex-start;gap:13px;margin-top:29px;color:#9aafc6;font-size:9px;line-height:1.8;font-weight:800;letter-spacing:1.4px}
+.cw-footer-location-dot{height:8px;width:8px;flex:none;margin-top:5px;border:1px solid #ffc107;transform:rotate(45deg)}
+footer.cw-footer .cw-footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:25px;padding-bottom:30px;border-top:1px solid #ffffff28}
+footer.cw-footer .cw-footer-bottom p{color:#8da1b8;font-size:9px;letter-spacing:1px;line-height:1.7;margin:0;font-weight:700}
+.cw-footer-bottom-separator{color:#ffc107;margin:0 8px}
+footer.cw-footer .cw-footer-bottom a{color:#e8edf6;text-decoration:none}footer.cw-footer .cw-footer-bottom a:hover{color:#ffc107}
+.cw-footer-to-top{font-size:9px;font-weight:900;letter-spacing:1.3px;display:inline-flex;align-items:center;gap:12px}
+.cw-footer-to-top span{display:grid;place-items:center;width:33px;height:33px;border:1px solid #ffc107;color:#ffc107;font-size:17px;transition:background .25s,color .25s}
+.cw-footer-to-top:hover span{background:#ffc107;color:#061329}
+@media(max-width:900px){footer.cw-footer .cw-footer-main{grid-template-columns:1fr 1fr;gap:50px 32px}.cw-footer-brand{grid-column:1/-1}}
+@media(max-width:600px){footer.cw-footer .cw-footer-main{display:flex;flex-direction:column;gap:45px;padding-top:62px;padding-bottom:58px}.cw-footer-brand,.cw-footer-navigation,.cw-footer-action{width:100%}.cw-footer-wordmark{font-size:50px}.cw-footer-navigation>a,.cw-footer-navigation h3{max-width:none}footer.cw-footer .cw-footer-bottom{flex-direction:column;align-items:flex-start;gap:12px;padding-top:23px;padding-bottom:28px}.cw-footer-to-top{margin-top:8px}.cw-footer-eyebrow{font-size:8px;letter-spacing:1.4px}}
+@media(prefers-reduced-motion:reduce){.cw-footer-navigation>a,.cw-footer-cta,.cw-footer-to-top span{transition:none}}
+
+</style>
+
+<style id="cw-sticky-motion-upgrade">
+/* Separate live navigation appears after the artwork's printed navigation scrolls away. */
+.cw-follow-nav{position:fixed;z-index:9990;top:0;left:0;right:0;display:flex;align-items:center;gap:24px;min-height:74px;padding:10px clamp(18px,5vw,76px);background:rgba(5,17,37,.96);border-bottom:1px solid rgba(255,193,7,.48);box-shadow:0 14px 38px rgba(0,0,0,.3);backdrop-filter:blur(16px);transform:translateY(-110%);opacity:0;pointer-events:none;transition:transform .4s ease,opacity .4s ease}
+.cw-follow-nav.is-visible{transform:translateY(0);opacity:1;pointer-events:auto}
+.cw-follow-brand{color:#fff;text-decoration:none;font-family:'Barlow Condensed',Impact,sans-serif;font-weight:800;font-size:clamp(18px,2.1vw,27px);letter-spacing:.045em;line-height:1;white-space:nowrap}
+.cw-follow-brand span{color:#ffc107}.cw-follow-brand small{display:block;font:600 9px Arial,sans-serif;letter-spacing:.24em;color:#b8c9df;margin-top:5px}
+.cw-follow-links{display:flex;align-items:center;gap:clamp(12px,2vw,28px);margin-left:auto}
+.cw-follow-links a,.cw-follow-mobile-menu a{color:#eef4ff;text-decoration:none;font-size:11px;font-weight:700;letter-spacing:.11em;transition:color .2s}
+.cw-follow-links a:hover,.cw-follow-mobile-menu a:hover{color:#ffc107}
+.cw-follow-links .cw-follow-cta{background:#ffc107;color:#061329;padding:13px 17px;white-space:nowrap}.cw-follow-links .cw-follow-cta:hover{background:#fff;color:#061329}
+.cw-follow-toggle{display:none;margin-left:auto;color:#ffc107;border:1px solid rgba(255,193,7,.6);background:transparent;padding:7px 13px;font-size:22px;cursor:pointer}
+.cw-follow-mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#061329;border-bottom:1px solid #ffc107;padding:12px 22px 20px;box-shadow:0 20px 35px #0006}
+.cw-follow-mobile-menu.is-open{display:flex;flex-direction:column;gap:0}.cw-follow-mobile-menu a{padding:13px 5px;border-bottom:1px solid #ffffff1b}
+@media(max-width:900px){.cw-follow-links{gap:12px}.cw-follow-links a{font-size:9px}.cw-follow-brand{font-size:19px}}
+@media(max-width:700px){.cw-follow-nav{min-height:65px;padding:10px 20px}.cw-follow-links{display:none}.cw-follow-toggle{display:block}}
+/* Subtle cinematic depth: only the images move, never the clickable hero hotspots. */
+.cw-exact-image{will-change:transform;transform:translate3d(0,var(--cw-hero-drift,0px),0) scale(1.035);transform-origin:center center}
+.cw-about-art{overflow:hidden}.cw-about-art img{will-change:transform;transform:translate3d(0,var(--cw-about-drift,0px),0) scale(1.045);transform-origin:center center}
+.cw-about-approved{isolation:isolate}
+@media(prefers-reduced-motion:reduce){.cw-follow-nav{transition:none}.cw-exact-image,.cw-about-art img{transform:none!important;will-change:auto}}
+</style>
+
+<style id="cw-volschenk-hero-signature">
+/* Cinematic architectural depth: autonomous, no mouse tracking. */
+.cw-exact{isolation:isolate;perspective:1200px;background:#020916}
+.cw-exact-image{position:relative;z-index:1;display:block;transform-origin:50% 54%;transform:translate3d(0,var(--cw-hero-drift,0px),0) scale(var(--cw-depth-scale,1.018))!important;animation:cwDepthArrival 2.1s cubic-bezier(.16,.7,.2,1) both;will-change:transform;filter:contrast(1.055) saturate(1.045)}
+/* Foreground vignette makes the architecture recede into shadow. */
+.cw-exact::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:radial-gradient(ellipse 60% 62% at 54% 51%,transparent 36%,rgba(2,8,21,.24) 80%,rgba(1,5,15,.54) 100%),linear-gradient(180deg,rgba(2,9,24,.26),transparent 22%,transparent 72%,rgba(2,8,22,.28));box-shadow:inset 0 0 95px 10px rgba(2,8,22,.28)}
+/* Multiple lighting planes animate independently of the image. */
+.cw-exact::after{content:"";position:absolute;inset:-12%;z-index:3;pointer-events:none;background:radial-gradient(ellipse 28% 58% at 82% 38%,rgba(255,190,42,.12),transparent 80%),linear-gradient(112deg,transparent 36%,rgba(255,208,98,.055) 49%,transparent 60%);mix-blend-mode:screen;animation:cwAtmosphere 10s ease-in-out infinite alternate}
+.cw-vb-overlay{position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden}
+.cw-vb-overlay .vb-topline{position:absolute;top:11.7%;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,193,7,.53),transparent);transform-origin:left;animation:cwLineReveal 1.8s ease both}
+.cw-vb-overlay .vb-cross{position:absolute;right:4.2%;top:51%;width:44px;height:44px;opacity:.55;animation:cwSlowRotate 36s linear infinite}
+.cw-vb-overlay .vb-cross::before,.cw-vb-overlay .vb-cross::after{content:"";position:absolute;background:rgba(255,193,7,.7)}
+.cw-vb-overlay .vb-cross::before{width:1px;height:100%;left:50%}.cw-vb-overlay .vb-cross::after{height:1px;width:100%;top:50%}
+.cw-vb-overlay .vb-edge{position:absolute;right:2.2%;top:26%;height:42%;width:1px;background:linear-gradient(transparent,#ffc107,transparent);opacity:.65;animation:cwPulse 6s ease-in-out infinite}
+.cw-vb-overlay .vb-corner{position:absolute;left:2.4%;bottom:8%;width:27px;height:27px;border-left:1px solid rgba(255,193,7,.8);border-bottom:1px solid rgba(255,193,7,.8)}
+.cw-vb-overlay .vb-index{position:absolute;right:3%;bottom:8%;font:600 clamp(7px,.6vw,10px)/1.5 monospace;letter-spacing:.2em;color:rgba(255,222,134,.85);writing-mode:vertical-rl}
+/* The perspective floor is an additional visual plane, without shifting clickable hotspots. */
+.cw-vb-overlay::before{content:"";position:absolute;left:-22%;right:-22%;bottom:-32%;height:54%;transform:perspective(420px) rotateX(67deg);transform-origin:50% 100%;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(12.5% - 1px),rgba(255,193,7,.12) 12.5%),repeating-linear-gradient(0deg,transparent 0,transparent 48px,rgba(255,193,7,.10) 49px);mask-image:linear-gradient(0deg,rgba(0,0,0,.55),transparent 85%);opacity:.38;animation:cwFloorBreath 9s ease-in-out infinite alternate}
+.cw-vb-overlay::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,193,7,.13);box-shadow:inset 0 0 70px rgba(3,11,27,.28);pointer-events:none}
+.cw-exact-links,.cw-exact>.cw-hotspot,.cw-exact-menu{z-index:25!important}
+@keyframes cwDepthArrival{from{opacity:.55;filter:brightness(.68) blur(2px);transform:translate3d(0,14px,0) scale(1.055)}to{opacity:1;filter:brightness(1);transform:translate3d(0,0,0) scale(1.018)}}
+@keyframes cwAtmosphere{from{transform:translate3d(-2%,0,0);opacity:.48}to{transform:translate3d(2%,-1%,0);opacity:.9}}
+@keyframes cwLineReveal{from{transform:scaleX(0);opacity:0}to{transform:scaleX(1);opacity:1}}
+@keyframes cwSlowRotate{to{transform:rotate(360deg)}}
+@keyframes cwPulse{50%{opacity:.25}}
+@keyframes cwFloorBreath{to{opacity:.68;transform:perspective(420px) rotateX(67deg) translateY(-12px)}}
+@media(max-width:720px){.cw-vb-overlay{display:none}.cw-mobile-exact::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 70% 40%,rgba(255,193,7,.08),transparent 65%)}}
+@media(prefers-reduced-motion:reduce){.cw-exact-image{animation:none!important;transform:none!important;will-change:auto}.cw-exact::after,.cw-vb-overlay *,.cw-vb-overlay::before{animation:none!important}}
+</style>
+
+<style id="cw-hero-deep-stage-v2">
+/* Original artwork is retained intact. All depth elements are non-interactive. */
+@media(min-width:721px){
+.cw-exact{overflow:hidden;--cw-stage-scroll:0;--cw-stage-zoom:1.015}
+.cw-exact-image{animation:none!important;filter:none!important;transform:translate3d(0,calc(var(--cw-stage-scroll) * 18px),0) scale(var(--cw-stage-zoom))!important;transition:transform .14s linear;transform-origin:52% 55%}
+.cw-exact::before{background:linear-gradient(90deg,rgba(2,8,20,.31) 0%,transparent 19%,transparent 81%,rgba(2,8,20,.35) 100%),linear-gradient(180deg,rgba(2,8,20,.24),transparent 23%,transparent 72%,rgba(2,8,20,.28));box-shadow:inset 0 0 105px 20px rgba(1,7,19,.28)}
+.cw-exact::after{background:radial-gradient(ellipse 32% 44% at 74% 55%,rgba(255,190,50,.14),transparent 85%);animation:cwDeepAmbient 6.5s ease-in-out infinite alternate}
+.cw-depth-stage{position:absolute;inset:0;z-index:5;pointer-events:none;overflow:hidden;perspective:1000px}
+.cw-depth-stage .cw-depth-left,.cw-depth-stage .cw-depth-right{position:absolute;top:11.5%;bottom:0;width:13%;border-color:rgba(255,193,7,.38);opacity:.85;transform:translateY(calc(var(--cw-stage-scroll) * -28px))}
+.cw-depth-stage .cw-depth-left{left:0;border-right:1px solid rgba(255,193,7,.22);background:linear-gradient(90deg,rgba(2,9,25,.32),transparent)}
+.cw-depth-stage .cw-depth-right{right:0;border-left:1px solid rgba(255,193,7,.22);background:linear-gradient(270deg,rgba(2,9,25,.28),transparent)}
+.cw-depth-stage .cw-depth-left::after,.cw-depth-stage .cw-depth-right::after{content:"";position:absolute;top:9%;width:2px;height:56%;background:linear-gradient(transparent,rgba(255,199,60,.82),transparent);filter:drop-shadow(0 0 12px #ffc107);animation:cwDeepRail 4.2s ease-in-out infinite alternate}
+.cw-depth-stage .cw-depth-left::after{right:0}.cw-depth-stage .cw-depth-right::after{left:0;animation-delay:-2s}
+.cw-depth-stage .cw-depth-beam{position:absolute;left:-35%;bottom:6%;width:110%;height:24%;background:linear-gradient(104deg,transparent 35%,rgba(255,204,84,.13) 48%,transparent 59%);transform:skewY(-8deg) translateX(-28%);mix-blend-mode:screen;animation:cwDeepBeam 11s ease-in-out infinite;opacity:.65}
+.cw-depth-stage .cw-depth-horizon{position:absolute;bottom:0;left:0;right:0;height:18%;background:linear-gradient(0deg,rgba(2,8,20,.28),transparent);transform:translateY(calc(var(--cw-stage-scroll) * 15px))}
+.cw-vb-overlay{opacity:.85}.cw-vb-overlay::before{opacity:.75}
+}
+@keyframes cwDeepAmbient{from{opacity:.45;transform:scale(.97)}to{opacity:.9;transform:scale(1.08)}}
+@keyframes cwDeepRail{from{opacity:.32;filter:drop-shadow(0 0 3px #ffc107)}to{opacity:.95;filter:drop-shadow(0 0 17px #ffc107)}}
+@keyframes cwDeepBeam{0%,18%{transform:skewY(-8deg) translateX(-30%);opacity:0}40%,64%{opacity:.65}85%,100%{transform:skewY(-8deg) translateX(62%);opacity:0}}
+@media(prefers-reduced-motion:reduce){.cw-depth-stage *,.cw-exact::after{animation:none!important}.cw-exact-image{transform:none!important}}
+</style>
+<style id="cw-living-photo">
+.cw-alive.cw-exact{display:block!important;isolation:isolate;position:relative;overflow:hidden;background:#0B1E3D}
+.cw-alive::before,.cw-alive::after{display:none!important}
+.cw-live-camera{position:absolute;inset:0;transform-origin:52% 54%;animation:cwLiveCamera 9s ease-in-out infinite alternate;will-change:transform}
+.cw-live-photo{display:block;width:100%;height:100%;object-fit:fill}
+.cw-live-road{position:absolute;inset:0;background:url('countrywide-exact-concept.jpg') center/100% 100% no-repeat;mask-image:linear-gradient(to bottom,transparent 84%,#000 97%);animation:cwLiveRoad 2.2s linear infinite;pointer-events:none;opacity:.55}
+.cw-live-sun{position:absolute;inset:0;background:radial-gradient(ellipse at 55% 35%,rgba(255,193,76,.26),transparent 32%);mix-blend-mode:screen;animation:cwLiveSun 6s ease-in-out infinite alternate;pointer-events:none}
+.cw-live-mist{position:absolute;left:-25%;bottom:2%;width:150%;height:22%;background:radial-gradient(ellipse at 25% 75%,rgba(243,207,160,.12),transparent 42%),radial-gradient(ellipse at 75% 40%,rgba(232,214,191,.07),transparent 38%);filter:blur(15px);animation:cwLiveMist 12s ease-in-out infinite alternate;pointer-events:none}
+.cw-live-mist-two{bottom:39%;opacity:.4;animation-duration:19s;animation-direction:alternate-reverse}
+@keyframes cwLiveCamera{0%{transform:scale(1.015) translate3d(.35%,.15%,0)}100%{transform:scale(1.12) translate3d(-1.2%,-.65%,0)}}
+@keyframes cwLiveRoad{from{transform:translate3d(1.5%,0,0);opacity:0}15%{opacity:.55}85%{opacity:.55}to{transform:translate3d(-1.5%,.4%,0);opacity:0}}
+@keyframes cwLiveSun{from{opacity:.2}to{opacity:.85}}
+@keyframes cwLiveMist{from{transform:translate3d(-6%,1%,0);opacity:.3}to{transform:translate3d(6%,-1%,0);opacity:.8}}
+@media(max-width:700px){.cw-alive.cw-exact{height:auto!important;min-height:0!important;aspect-ratio:1923/818!important}.cw-live-camera{animation-name:cwLiveMobile}.cw-live-photo{object-fit:contain}}
+@keyframes cwLiveMobile{from{transform:translateY(-.4%)}to{transform:translateY(.4%)}}
+.cw-live-sky{position:absolute;inset:0;background:url('countrywide-exact-concept.jpg') center/100% 100% no-repeat;mask-image:linear-gradient(#000 0%,#000 10%,transparent 23%);animation:cwSkyDrift 13s ease-in-out infinite alternate;pointer-events:none}
+.cw-live-speed{position:absolute;left:-40%;bottom:0;width:180%;height:13%;background:repeating-linear-gradient(165deg,transparent 0 68px,rgba(255,205,104,.22) 70px,transparent 73px 185px);mask-image:linear-gradient(transparent,#000);animation:cwSpeed .95s linear infinite;mix-blend-mode:screen;pointer-events:none}
+@keyframes cwSpeed{from{transform:translateX(0)}to{transform:translateX(-185px)}}
+@keyframes cwSkyDrift{from{transform:translateX(-.4%) scale(1.02)}to{transform:translateX(1.4%) scale(1.045)}}
+@media(max-width:700px){.cw-live-camera{animation-name:cwLiveCamera;animation-duration:10s}.cw-live-speed{height:11%;opacity:.5}}
+@media(prefers-reduced-motion:reduce){.cw-alive *{animation:none!important;transform:none!important;will-change:auto}.cw-live-road,.cw-live-mist,.cw-live-sun{display:none}}
+</style>
+<style id="cw-hero-scroll-arrow">
+.cw-hero-scroll-arrow{position:absolute;z-index:10;left:50%;bottom:22px;transform:translateX(-50%);display:grid;place-items:center;width:46px;height:58px;border:1px solid rgba(255,193,7,.65);border-radius:24px;background:rgba(11,30,61,.7);color:#FFC107;backdrop-filter:blur(6px);text-decoration:none;box-shadow:0 4px 22px rgba(0,0,0,.22);transition:background .2s,border-color .2s}
+.cw-hero-scroll-arrow svg{width:21px;height:28px;animation:cwScrollArrowHint 1.9s ease-in-out infinite}
+.cw-hero-scroll-arrow:hover{background:#0B1E3D;border-color:#FFC107}
+.cw-hero-scroll-arrow:focus-visible{outline:2px solid #FFC107;outline-offset:5px}
+@keyframes cwScrollArrowHint{0%,100%{transform:translateY(-3px)}50%{transform:translateY(4px)}}
+@media(max-width:700px){.cw-hero-scroll-arrow{width:34px;height:42px;bottom:10px}.cw-hero-scroll-arrow svg{width:17px;height:23px}}
+@media(prefers-reduced-motion:reduce){.cw-hero-scroll-arrow svg{animation:none}}
+</style>
+<style id="cw-about-living-scene">
+#about .cw-about-art{position:relative;isolation:isolate;overflow:hidden}
+#about .cw-about-art>img{transform:none!important;will-change:auto}
+#about .cw-about-motion{position:absolute;inset:0;pointer-events:none;overflow:hidden;mask-image:linear-gradient(90deg,transparent 36%,#000 48%);-webkit-mask-image:linear-gradient(90deg,transparent 36%,#000 48%)}
+#about .cw-about-motion img{display:block;width:100%;height:100%;object-fit:fill;transform-origin:76% 54%;animation:cwAboutTruckBreathe 10s ease-in-out infinite alternate;will-change:transform;mask-image:linear-gradient(#000 0%,#000 74%,transparent 86%)}
+#about .cw-about-light{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 82% 37%,rgba(255,174,52,.21),transparent 35%);mix-blend-mode:screen;animation:cwAboutLightBreathe 5s ease-in-out infinite alternate}
+#about .cw-about-haze{position:absolute;left:40%;right:-25%;top:53%;height:24%;pointer-events:none;background:radial-gradient(ellipse at 35% 70%,rgba(255,210,145,.18),transparent 48%),radial-gradient(ellipse at 75% 35%,rgba(204,223,242,.09),transparent 40%);filter:blur(16px);animation:cwAboutHazeDrift 9s ease-in-out infinite alternate}
+#about .cw-about-reflection{position:absolute;left:42%;right:0;top:70%;height:13%;pointer-events:none;background:linear-gradient(110deg,transparent 25%,rgba(255,188,73,.14) 48%,transparent 64%);mix-blend-mode:screen;mask-image:linear-gradient(transparent,#000,transparent);animation:cwAboutReflection 7s ease-in-out infinite alternate}
+@keyframes cwAboutTruckBreathe{from{transform:scale(1) translate3d(0,0,0)}to{transform:scale(1.035) translate3d(-.5%,-.3%,0)}}
+@keyframes cwAboutLightBreathe{from{opacity:.2}to{opacity:.9}}
+@keyframes cwAboutHazeDrift{from{transform:translate3d(-7%,1%,0);opacity:.25}to{transform:translate3d(7%,-2%,0);opacity:.8}}
+@keyframes cwAboutReflection{from{transform:translateX(-12%);opacity:.15}to{transform:translateX(12%);opacity:.7}}
+@media(max-width:720px){#about .cw-about-motion{mask-image:none;-webkit-mask-image:none}#about .cw-about-motion img{object-fit:cover;object-position:70% center}#about .cw-about-haze{left:0;top:60%}#about .cw-about-light{background:radial-gradient(ellipse at 75% 35%,rgba(255,174,52,.16),transparent 50%)}}
+@media(prefers-reduced-motion:reduce){#about .cw-about-motion img{animation:none!important;transform:none!important;will-change:auto}#about .cw-about-light,#about .cw-about-haze,#about .cw-about-reflection{animation:none!important;display:none}}
+</style>
+<style id="cw-experience-orbit">
+.cw-experience-orbit{position:absolute;z-index:5;left:4.5%;top:58.7%;width:26.8%;height:12.6%;overflow:visible;pointer-events:none}
+.cw-experience-orbit rect{fill:none;stroke:#FFC107;stroke-width:2;vector-effect:non-scaling-stroke;stroke-dasharray:14 86;animation:cwExperienceCircuit 4s linear infinite;filter:drop-shadow(0 0 4px #FFC107)}
+@keyframes cwExperienceCircuit{to{stroke-dashoffset:-100}}
+@media(max-width:720px){.cw-experience-orbit{display:none}.cw-about-mob-experience{position:relative;isolation:isolate}.cw-about-mob-experience::after{content:"";position:absolute;inset:-1px;pointer-events:none;border:2px solid transparent;border-top-color:#FFC107;border-bottom-color:#FFC107;animation:cwExperienceMobileGlow 2s ease-in-out infinite alternate;box-shadow:0 0 9px rgba(255,193,7,.2)}}
+@keyframes cwExperienceMobileGlow{from{opacity:.25}to{opacity:1;box-shadow:0 0 16px rgba(255,193,7,.4)}}
+@media(prefers-reduced-motion:reduce){.cw-experience-orbit rect,.cw-about-mob-experience::after{animation:none}}
+</style>
+<style id="cw-about-light-sweep-style">
+#about .cw-about-light-sweep{position:absolute;inset:0;pointer-events:none;z-index:4;overflow:hidden;mix-blend-mode:screen}
+#about .cw-about-light-sweep::before{content:"";position:absolute;top:-20%;left:-55%;width:40%;height:140%;background:linear-gradient(105deg,transparent 12%,rgba(255,209,117,.035) 32%,rgba(255,219,148,.17) 50%,rgba(255,209,117,.035) 68%,transparent 88%);filter:blur(8px);transform:skewX(-12deg);animation:cwAboutGoldenSweep 9s ease-in-out infinite;will-change:transform,opacity}
+@keyframes cwAboutGoldenSweep{0%,8%{transform:translateX(0) skewX(-12deg);opacity:0}18%{opacity:.85}75%{opacity:.85}88%,100%{transform:translateX(430%) skewX(-12deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){#about .cw-about-light-sweep{display:none}}
+</style>
+<style id="cw-delayed-welcome-card">
+#welcomePopup{inset:auto 24px 24px auto;width:min(380px,calc(100% - 48px));padding:0;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;display:block;pointer-events:none}
+#welcomePopup .welcome-popup{width:100%;padding:27px 28px 25px;pointer-events:auto;border:1px solid rgba(255,193,7,.5);border-top:3px solid #FFC107;border-radius:3px;box-shadow:0 15px 50px rgba(0,0,0,.35)}
+#welcomePopup.hidden .welcome-popup{pointer-events:none}
+#welcomePopup h2{font-size:32px;margin-bottom:14px}
+#welcomePopup p{font-size:13px;line-height:1.65;margin-bottom:20px}
+#welcomePopup .welcome-popup-label{font-size:8px;letter-spacing:1.5px;margin-bottom:16px;padding-right:18px}
+#welcomePopup .welcome-close{top:12px;right:12px;width:30px;height:30px}
+#welcomePopup .welcome-popup-buttons{display:flex}
+#welcomePopup .welcome-popup-btn{width:100%;padding:13px 15px;font-size:11px}
+@media(max-width:600px){#welcomePopup{inset:auto 16px 16px;width:calc(100% - 32px)}#welcomePopup .welcome-popup{padding:23px}#welcomePopup h2{font-size:28px}}
+</style>
 </head>
-
-
 <body>
-
-
-  <!-- =========================
+<!-- =========================
        WELCOME POPUP
   ========================= -->
-
-  <div
-    class="welcome-popup-overlay"
-    id="welcomePopup"
-    aria-hidden="false"
-  >
-
-    <div
-      class="welcome-popup"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="welcomePopupTitle"
-    >
-
-      <button
-        class="welcome-close"
-        id="welcomeClose"
-        aria-label="Close welcome popup"
-      >
-        <i class="bi bi-x-lg"></i>
-      </button>
-
-
-      <div class="welcome-popup-content">
-
-        <div class="welcome-popup-label">
+<div aria-hidden="true" class="welcome-popup-overlay hidden" id="welcomePopup" inert>
+<div aria-labelledby="welcomePopupTitle" aria-modal="false" class="welcome-popup" role="dialog">
+<button aria-label="Close welcome popup" class="welcome-close" id="welcomeClose">
+<i class="bi bi-x-lg"></i>
+</button>
+<div class="welcome-popup-content">
+<div class="welcome-popup-label">
           Countrywide Lowbed Services
         </div>
-
-
-        <h2 id="welcomePopupTitle">
-          Services You<br>
-          <span>Can Trust.</span>
-        </h2>
-
-
-        <p>
-          With over 26 years of industry experience, we provide
-          reliable heavy haulage and machinery transport solutions
-          throughout South Africa. Your load is handled with
-          experience, care and professionalism from collection to delivery.
-        </p>
-
-
-        <div class="welcome-popup-buttons">
-
-          <a
-            href="#contact"
-            class="welcome-popup-btn welcome-popup-btn-primary"
-          >
-            <i class="bi bi-file-earmark-text"></i>
-            Get A Quote
-          </a>
-
-
-          <a
-            href="#services"
-            class="welcome-popup-btn welcome-popup-btn-outline"
-          >
-            <i class="bi bi-arrow-right"></i>
-            What We Do
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- =========================
+<h2 id="welcomePopupTitle">Welcome to<br/><span>Countrywide.</span></h2>
+<p>Need heavy equipment or machinery transported? Let’s help you plan your next load.</p>
+<div class="welcome-popup-buttons"><a class="welcome-popup-btn welcome-popup-btn-primary" href="#contact">Request a Quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+<!-- =========================
        TOP BAR
   ========================= -->
-
-  <div class="topbar">
-
-    <div class="container topbar-inner">
-
-      <div class="topbar-left">
-
-        <a href="tel:+27711077261">
-          <i class="bi bi-telephone-fill"></i>
+<div class="topbar">
+<div class="container topbar-inner">
+<div class="topbar-left">
+<a href="tel:+27711077261">
+<i class="bi bi-telephone-fill"></i>
           071 107 7261
         </a>
-
-        <a href="mailto:countrywidelowbed@gmail.com">
-          <i class="bi bi-envelope-fill"></i>
+<a href="mailto:countrywidelowbed@gmail.com">
+<i class="bi bi-envelope-fill"></i>
           countrywidelowbed@gmail.com
         </a>
-
-      </div>
-
-
-      <div class="topbar-right">
-
-        <a href="#contact">
-          <i class="bi bi-geo-alt-fill"></i>
+</div>
+<div class="topbar-right">
+<a href="#contact">
+<i class="bi bi-geo-alt-fill"></i>
           Secunda, South Africa
         </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- =========================
+</div>
+</div>
+</div>
+<!-- =========================
        NAVBAR
   ========================= -->
-
-  <nav class="navbar">
-
-    <div class="container nav-inner">
-
-      <a
-        href="#home"
-        class="logo"
-        aria-label="Countrywide Lowbed Services home"
-      >
-
-        <img
-          src="countrywide-logo.jpeg"
-          alt="Countrywide Lowbed Services"
-        >
-
-      </a>
-
-
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Open menu"
-      >
-
-        <i class="bi bi-list"></i>
-
-      </button>
-
-
-      <ul class="nav-links" id="navLinks">
-
-        <li>
-
-          <a
-            href="#home"
-            class="active"
-          >
+<nav class="navbar">
+<div class="container nav-inner">
+<a aria-label="Countrywide Lowbed Services home" class="logo" href="#home">
+<img alt="Countrywide Lowbed Services" src="countrywide-logo.jpeg"/>
+</a>
+<button aria-label="Open menu" class="menu-toggle" id="menuToggle">
+<i class="bi bi-list"></i>
+</button>
+<ul class="nav-links" id="navLinks">
+<li>
+<a class="active" href="#home">
             Home
           </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#about">
+</li>
+<li>
+<a href="#about">
             About
           </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#services">
+</li>
+<li>
+<a href="#services">
             Services
           </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#sectors">
+</li>
+<li>
+<a href="#sectors">
             Sectors
           </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#gallery">
+</li>
+<li>
+<a href="#gallery">
             Gallery
           </a>
-
-        </li>
-
-
-        <li>
-
-          <a
-            href="#contact"
-            class="nav-button"
-          >
+</li>
+<li>
+<a class="nav-button" href="#contact">
             Contact Us
           </a>
+</li>
+</ul>
+</div>
+</nav>
 
-        </li>
-
-      </ul>
-
-    </div>
-
-  </nav>
-
-
-  <!-- =========================
+<nav class="cw-follow-nav" aria-label="Sticky website navigation" id="cwFollowNav">
+ <a class="cw-follow-brand" href="#home">COUNTRYWIDE <span>LOWBED</span><small>HEAVY HAULAGE · SOUTH AFRICA</small></a>
+ <div class="cw-follow-links"><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#sectors">SECTORS</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a><a class="cw-follow-cta" href="#contact">REQUEST A QUOTE ↗</a></div>
+ <button class="cw-follow-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="cwFollowMobileMenu">☰</button>
+ <div class="cw-follow-mobile-menu" id="cwFollowMobileMenu"><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#sectors">SECTORS</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a><a href="#contact">REQUEST A QUOTE ↗</a></div>
+</nav>
+<!-- =========================
        HERO
   ========================= -->
-
-  <section
-    class="hero"
-    id="home"
-  >
-
-    <div class="container">
-
-      <div class="hero-content reveal">
-
-        <div class="hero-label">
-          Heavy Haulage Specialists
-        </div>
-
-
-        <h1>
-          We Move<br>
-          <span>What Matters.</span>
-        </h1>
-
-
-        <p class="hero-description">
-          Heavy equipment, machinery and abnormal load transportation
-          throughout South Africa. From Secunda to anywhere the job takes us.
-        </p>
-
-
-        <div class="hero-buttons">
-
-          <a
-            href="tel:+27711077261"
-            class="btn btn-primary"
-          >
-
-            <i class="bi bi-telephone-fill"></i>
-
-            Call Now
-
-          </a>
-
-
-          <a
-            href="#services"
-            class="btn btn-outline"
-          >
-
-            Our Services
-
-            <i class="bi bi-arrow-down"></i>
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <div class="hero-stat">
-
-      <div class="hero-stat-number">
-        26+
-      </div>
-
-      <div class="hero-stat-text">
-        Years of<br>
-        Industry Experience
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       INTRO STRIP
-  ========================= -->
-
-  <section class="intro-strip">
-
-    <div class="container intro-grid">
-
-      <div class="intro-item">
-
-        <i class="bi bi-truck"></i>
-
-        Heavy Haulage
-
-      </div>
-
-
-      <div class="intro-item">
-
-        <i class="bi bi-box-seam"></i>
-
-        Abnormal Loads
-
-      </div>
-
-
-      <div class="intro-item">
-
-        <i class="bi bi-gear-wide-connected"></i>
-
-        Machinery Transport
-
-      </div>
-
-
-      <div class="intro-item">
-
-        <i class="bi bi-map"></i>
-
-        Nationwide Service
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
+<section aria-label="Countrywide lowbed truck and excavator travelling at sunset" class="cw-exact cw-alive" id="home">
+<div class="cw-live-camera"><img class="cw-live-photo" src="countrywide-exact-concept.jpg" alt="Countrywide truck transporting a yellow SHANTUI excavator at sunset" fetchpriority="high"><div class="cw-live-sky" aria-hidden="true"></div><div class="cw-live-road" aria-hidden="true"></div></div>
+<div class="cw-live-speed" aria-hidden="true"></div><div class="cw-live-sun" aria-hidden="true"></div><div class="cw-live-mist" aria-hidden="true"></div><div class="cw-live-mist cw-live-mist-two" aria-hidden="true"></div>
+<a class="cw-hero-scroll-arrow" href="#about" aria-label="Scroll down to About Countrywide"><svg viewBox="0 0 24 32" fill="none" aria-hidden="true"><path d="M12 4v22m-7-7 7 7 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</section>
+<!-- Subtle architectural transition between the two cinematic scenes -->
+<div aria-hidden="true" class="cw-scene-transition"><span class="cw-scene-transition-mark"></span></div>
+<!-- =========================
        ABOUT
   ========================= -->
-
-  <section
-    class="section about"
-    id="about"
-  >
-
-    <div class="container about-grid">
-
-      <div class="about-image reveal">
-
-        <img
-          src="img2.jpeg"
-          alt="Countrywide Lowbed Services heavy haulage truck"
-        >
-
-
-        <div class="about-badge">
-
-          <div>
-
-            <strong>
-              26+
-            </strong>
-
-            <span>
-              Years Experience
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="about-content reveal">
-
-        <div class="section-label">
-          About Countrywide
-        </div>
-
-
-        <h2 class="section-title">
-          Built To <span>Carry.</span><br>
-          Driven To Deliver.
-        </h2>
-
-
-        <p class="section-text">
-          Countrywide Lowbed Services is a Secunda-based transport
-          and logistics company specialising in the transportation
-          of heavy equipment and machinery throughout South Africa.
-        </p>
-
-
-        <p class="section-text">
-          We specialise in the transportation of heavy equipment,
-          mining machinery, construction equipment, agricultural
-          machinery, and abnormal loads throughout South Africa.
-        </p>
-
-
-        <p class="section-text">
-          With over <strong>26 years of industry experience</strong>,
-          we provide reliable, safe, and efficient machinery moving
-          solutions tailored to the mining, construction, agricultural,
-          and industrial sectors.
-        </p>
-
-
-        <ul class="about-list">
-
-          <li>
-            <i class="bi bi-check-circle-fill"></i>
-            Safe Transportation
-          </li>
-
-          <li>
-            <i class="bi bi-check-circle-fill"></i>
-            Experienced Drivers
-          </li>
-
-          <li>
-            <i class="bi bi-check-circle-fill"></i>
-            Reliable Service
-          </li>
-
-          <li>
-            <i class="bi bi-check-circle-fill"></i>
-            Nationwide Coverage
-          </li>
-
-          <li>
-            <i class="bi bi-check-circle-fill"></i>
-            Industry Compliance
-          </li>
-
-          <li>
-            <i class="bi bi-check-circle-fill"></i>
-            On-Time Delivery
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
+<section aria-label="About Countrywide Lowbed Services" class="cw-about-approved" id="about"><div class="cw-about-art"><img alt="Countrywide Lowbed Services — Driven to Deliver, Built to Carry. Heavy equipment transport throughout South Africa, with 26 plus years of experience." loading="lazy" src="countrywide-about-cinematic.jpg"/><svg class="cw-experience-orbit" viewBox="0 0 340 84" preserveAspectRatio="none" aria-hidden="true"><rect x="1" y="1" width="338" height="82" pathLength="100"/></svg><div class="cw-about-light-sweep" aria-hidden="true"></div></div><div class="cw-about-mobile-content"><div class="cw-about-mob-kicker">ABOUT COUNTRYWIDE</div><h2>DRIVEN TO DELIVER.<br/><span>BUILT TO CARRY.</span></h2><p class="cw-about-mob-tagline">HEAVY EQUIPMENT AND MACHINERY TRANSPORT ACROSS SOUTH AFRICA.</p><p>Countrywide Lowbed Services is a Secunda-based transport and logistics company specialising in heavy equipment, machinery and abnormal load transportation throughout South Africa.</p><p>With over 26 years of experience, we serve the mining, construction, agricultural and industrial sectors.</p><div class="cw-about-mob-experience"><strong>26+</strong><span>YEARS OF EXPERIENCE</span></div><div class="cw-about-mob-features"><div><i class="bi bi-people"></i><b>EXPERIENCED TEAM</b><small>Skilled operations team and professional drivers.</small></div><div><i class="bi bi-gear"></i><b>MODERN EQUIPMENT</b><small>Reliable, well-maintained fleet for all load types.</small></div><div><i class="bi bi-geo-alt"></i><b>NATIONWIDE EXPERTISE</b><small>From Secunda to every corner of South Africa.</small></div></div></div></section>
+<!-- =========================
        SERVICES
   ========================= -->
-
-  <section
-    class="section services"
-    id="services"
-  >
-
-    <div class="container">
-
-      <div class="section-heading reveal">
-
-        <div class="section-label">
-          What We Do
-        </div>
-
-
-        <h2 class="section-title">
-          Heavy Loads.<br>
-          <span>Smart Solutions.</span>
-        </h2>
-
-
-        <p
-          class="section-text"
-          style="margin-top:20px;"
-        >
-          Professional transportation solutions for equipment,
-          machinery and loads that require specialist handling
-          and dependable delivery.
-        </p>
-
-      </div>
-
-
-      <div class="services-grid">
-
-        <div class="service-card reveal">
-
-          <div class="service-icon">
-            <i class="bi bi-truck-front-fill"></i>
-          </div>
-
-          <h3>
-            Heavy Haulage
-          </h3>
-
-          <p>
-            Professional transportation of heavy equipment and machinery
-            using suitable heavy-haulage equipment.
-          </p>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-          <div class="service-icon">
-            <i class="bi bi-exclamation-triangle-fill"></i>
-          </div>
-
-          <h3>
-            Abnormal Loads
-          </h3>
-
-          <p>
-            Reliable transportation solutions for oversized,
-            overweight and specialised loads throughout South Africa.
-          </p>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-          <div class="service-icon">
-            <i class="bi bi-gear-wide-connected"></i>
-          </div>
-
-          <h3>
-            Machinery Moving
-          </h3>
-
-          <p>
-            Safe movement of heavy machinery and equipment for mining,
-            construction, agriculture and industry.
-          </p>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-          <div class="service-icon">
-            <i class="bi bi-building-fill"></i>
-          </div>
-
-          <h3>
-            Mining Equipment
-          </h3>
-
-          <p>
-            Transport solutions for mining machinery and equipment
-            across South Africa.
-          </p>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-          <div class="service-icon">
-            <i class="bi bi-cone-striped"></i>
-          </div>
-
-          <h3>
-            Construction Equipment
-          </h3>
-
-          <p>
-            Transportation of construction machinery and equipment
-            to and from project sites.
-          </p>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-          <div class="service-icon">
-            <i class="bi bi-wrench-adjustable-circle-fill"></i>
-          </div>
-
-          <h3>
-            Specialised Transport
-          </h3>
-
-          <p>
-            Tailored transport solutions designed around the requirements
-            of your load and destination.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
+<section aria-labelledby="cw-services-title" class="section services cw-services-v2" id="services">
+<div aria-hidden="true" class="cw-services-blueprint"></div>
+<div class="container cw-services-shell">
+<div class="cw-services-header reveal">
+<div class="cw-services-heading"><div class="cw-services-kicker"><span></span> COUNTRYWIDE / CAPABILITIES <span class="cw-services-index">01 — 06</span></div>
+<h2 id="cw-services-title">HEAVY LOADS.<br/><em>SMART SOLUTIONS.</em></h2></div>
+<div class="cw-services-intro"><span class="cw-services-intro-line"></span><p>Professional transportation solutions for equipment, machinery and loads that require specialist handling and dependable delivery.</p><small>ENGINEERED TO MOVE WHAT MATTERS.</small></div>
+</div>
+<div class="cw-services-grid">
+<article class="cw-service-panel reveal" tabindex="0">
+<div class="cw-service-top"><span class="cw-service-number">01<span class="cw-service-num-slash"> / 06</span></span><i aria-hidden="true" class="bi bi-truck-front-fill"></i></div>
+<div class="cw-service-body"><div class="cw-service-tag">HEAVY EQUIPMENT</div><h3>Heavy Haulage</h3><p>Professional transportation of heavy equipment and machinery using suitable heavy-haulage equipment.</p></div>
+<div class="cw-service-bottom"><span>COUNTRYWIDE LOWBED SERVICES</span><span aria-hidden="true" class="cw-service-arrow">↗</span></div>
+</article>
+<article class="cw-service-panel reveal" tabindex="0">
+<div class="cw-service-top"><span class="cw-service-number">02<span class="cw-service-num-slash"> / 06</span></span><i aria-hidden="true" class="bi bi-exclamation-triangle"></i></div>
+<div class="cw-service-body"><div class="cw-service-tag">OVERSIZED TRANSPORT</div><h3>Abnormal Loads</h3><p>Reliable transportation solutions for oversized, overweight and specialised loads throughout South Africa.</p></div>
+<div class="cw-service-bottom"><span>COUNTRYWIDE LOWBED SERVICES</span><span aria-hidden="true" class="cw-service-arrow">↗</span></div>
+</article>
+<article class="cw-service-panel reveal" tabindex="0">
+<div class="cw-service-top"><span class="cw-service-number">03<span class="cw-service-num-slash"> / 06</span></span><i aria-hidden="true" class="bi bi-gear-wide-connected"></i></div>
+<div class="cw-service-body"><div class="cw-service-tag">PRECISION HANDLING</div><h3>Machinery Moving</h3><p>Safe movement of heavy machinery and equipment for mining, construction, agriculture and industry.</p></div>
+<div class="cw-service-bottom"><span>COUNTRYWIDE LOWBED SERVICES</span><span aria-hidden="true" class="cw-service-arrow">↗</span></div>
+</article>
+<article class="cw-service-panel reveal" tabindex="0">
+<div class="cw-service-top"><span class="cw-service-number">04<span class="cw-service-num-slash"> / 06</span></span><i aria-hidden="true" class="bi bi-building-gear"></i></div>
+<div class="cw-service-body"><div class="cw-service-tag">MINING LOGISTICS</div><h3>Mining Equipment</h3><p>Transport solutions for mining machinery and equipment across South Africa.</p></div>
+<div class="cw-service-bottom"><span>COUNTRYWIDE LOWBED SERVICES</span><span aria-hidden="true" class="cw-service-arrow">↗</span></div>
+</article>
+<article class="cw-service-panel reveal" tabindex="0">
+<div class="cw-service-top"><span class="cw-service-number">05<span class="cw-service-num-slash"> / 06</span></span><i aria-hidden="true" class="bi bi-cone-striped"></i></div>
+<div class="cw-service-body"><div class="cw-service-tag">SITE DELIVERY</div><h3>Construction Equipment</h3><p>Transportation of construction machinery and equipment to and from project sites.</p></div>
+<div class="cw-service-bottom"><span>COUNTRYWIDE LOWBED SERVICES</span><span aria-hidden="true" class="cw-service-arrow">↗</span></div>
+</article>
+<article class="cw-service-panel reveal" tabindex="0">
+<div class="cw-service-top"><span class="cw-service-number">06<span class="cw-service-num-slash"> / 06</span></span><i aria-hidden="true" class="bi bi-wrench-adjustable-circle"></i></div>
+<div class="cw-service-body"><div class="cw-service-tag">TAILORED SOLUTIONS</div><h3>Specialised Transport</h3><p>Tailored transport solutions designed around the requirements of your load and destination.</p></div>
+<div class="cw-service-bottom"><span>COUNTRYWIDE LOWBED SERVICES</span><span aria-hidden="true" class="cw-service-arrow">↗</span></div>
+</article>
+</div>
+<div class="cw-services-footer reveal"><span><i aria-hidden="true" class="bi bi-geo-alt"></i> SECUNDA BASED · NATIONWIDE REACH</span><a href="#contact">DISCUSS YOUR LOAD <span aria-hidden="true">↗</span></a></div>
+</div>
+</section>
+<!-- =========================
        NATIONWIDE CTA
   ========================= -->
-
-  <section class="nationwide">
-
-    <div class="container nationwide-inner">
-
-      <div class="nationwide-content">
-
-        <div class="nationwide-label">
-
-          <span></span>
-
-          Nationwide Heavy Haulage
-
-        </div>
-
-
-        <h2>
-          Heavy Haulage.<br>
-          <span>Nationwide.</span>
-        </h2>
-
-
-        <p>
-          Whether you need heavy machinery moved across town
-          or across the country, Countrywide Lowbed Services
-          provides dependable transport solutions from Secunda
-          to destinations throughout South Africa.
-        </p>
-
-
-        <div class="nationwide-actions">
-
-          <a
-            href="#contact"
-            class="nationwide-btn"
-          >
-
-            <i class="bi bi-file-earmark-text"></i>
-
-            Get A Transport Quote
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
+<section aria-label="Nationwide heavy haulage" class="nationwide cw-reach">
+<div aria-hidden="true" class="cw-reach-grid"></div>
+<div aria-hidden="true" class="cw-reach-glow"></div>
+<div class="container cw-reach-inner">
+<div class="cw-reach-copy reveal">
+<div class="cw-reach-eyebrow"><span class="cw-reach-pulse"></span> OPERATIONS / SOUTH AFRICA <span class="cw-reach-index">07 — NATIONWIDE</span></div>
+<h2>FROM SECUNDA.<br/><span>TO EVERYWHERE.</span></h2>
+<p>Whether you need heavy machinery moved across town or across the country, Countrywide Lowbed Services provides dependable transport solutions from Secunda to destinations throughout South Africa.</p>
+<a class="cw-reach-button" href="#contact">GET A TRANSPORT QUOTE <span aria-hidden="true">↗</span></a>
+</div>
+<div aria-label="Stylised nationwide transport network" class="cw-reach-visual reveal">
+<div class="cw-reach-visual-top"><span>TRANSPORT NETWORK</span><span>ZA / NATIONAL</span></div>
+<div aria-hidden="true" class="cw-reach-map">
+<svg focusable="false" role="presentation" viewbox="0 0 500 360">
+<defs><pattern height="20" id="cwMapDots" patternunits="userSpaceOnUse" width="20"><circle cx="1" cy="1" fill="#54708c" opacity=".35" r="1"></circle></pattern><lineargradient id="cwRouteGradient" x1="0" x2="1"><stop stop-color="#FFC107" stop-opacity=".25"></stop><stop offset=".5" stop-color="#FFC107"></stop><stop offset="1" stop-color="#FFC107" stop-opacity=".35"></stop></lineargradient></defs>
+<rect fill="url(#cwMapDots)" height="360" width="500"></rect>
+<path d="M136 32 L203 48 L254 25 L308 60 L366 75 L396 121 L374 158 L413 194 L379 245 L322 276 L276 330 L231 312 L199 268 L153 257 L118 207 L95 163 L112 111 Z" fill="#102b4a" fill-opacity=".7" stroke="#57708d" stroke-dasharray="5 6" stroke-width="1.4"></path>
+<g class="cw-reach-routes" fill="none" stroke="url(#cwRouteGradient)" stroke-linecap="round" stroke-width="2"><path d="M283 226 Q223 155 159 106"></path><path d="M283 226 Q323 143 363 121"></path><path d="M283 226 Q350 220 377 241"></path><path d="M283 226 Q252 281 276 304"></path><path d="M283 226 Q192 217 125 184"></path></g>
+<g fill="#FFC107"><circle cx="159" cy="106" r="4"></circle><circle cx="363" cy="121" r="4"></circle><circle cx="377" cy="241" r="4"></circle><circle cx="276" cy="304" r="4"></circle><circle cx="125" cy="184" r="4"></circle></g>
+<circle class="cw-reach-ring" cx="283" cy="226" fill="#FFC107" opacity=".12" r="17"></circle><circle cx="283" cy="226" fill="#FFC107" r="7"></circle><circle cx="283" cy="226" fill="#071a32" r="3"></circle>
+<text fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="bold" letter-spacing="1.3" x="298" y="216">SECUNDA</text>
+<text fill="#9eb1c7" font-family="Arial,sans-serif" font-size="8" letter-spacing="1" x="298" y="230">OPERATIONS BASE</text>
+</svg>
+</div>
+<div class="cw-reach-visual-bottom"><span><i aria-hidden="true" class="bi bi-geo-alt"></i> SECUNDA, MPUMALANGA</span><span>REACH / NATIONWIDE <i aria-hidden="true" class="bi bi-arrow-up-right"></i></span></div>
+</div>
+</div>
+<div aria-hidden="true" class="cw-reach-bottomline"><span></span></div>
+</section>
+<!-- =========================
        SECTORS
   ========================= -->
-
-  <section
-    class="section sectors"
-    id="sectors"
-  >
-
-    <div class="container">
-
-      <div class="section-heading reveal">
-
-        <div class="section-label">
-          Industries We Serve
-        </div>
-
-
-        <h2 class="section-title">
-          Transport<br>
-          <span>Built Around You.</span>
-        </h2>
-
-      </div>
-
-
-      <div class="sectors-grid">
-
-        <div class="sector-card reveal">
-
-          <img
-            src="img3.jpeg"
-            alt="Mining equipment transport"
-          >
-
-          <div class="sector-content">
-
-            <i class="bi bi-building-gear"></i>
-
-            <h3>
-              Mining
-            </h3>
-
-          </div>
-
-        </div>
-
-
-        <div class="sector-card reveal">
-
-          <img
-            src="img4.jpeg"
-            alt="Construction equipment transport"
-          >
-
-          <div class="sector-content">
-
-            <i class="bi bi-cone-striped"></i>
-
-            <h3>
-              Construction
-            </h3>
-
-          </div>
-
-        </div>
-
-
-        <div class="sector-card reveal">
-
-          <img
-            src="img5.jpeg"
-            alt="Agricultural machinery transport"
-          >
-
-          <div class="sector-content">
-
-            <i class="bi bi-tree-fill"></i>
-
-            <h3>
-              Agriculture
-            </h3>
-
-          </div>
-
-        </div>
-
-
-        <div class="sector-card reveal">
-
-          <img
-            src="img6.jpeg"
-            alt="Industrial machinery transport"
-          >
-
-          <div class="sector-content">
-
-            <i class="bi bi-buildings-fill"></i>
-
-            <h3>
-              Industrial
-            </h3>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
+<section aria-labelledby="cw-industries-title" class="section sectors cw-industries" id="sectors">
+<div class="container cw-industries-inner">
+<div class="cw-industries-heading reveal"><div><span class="cw-industries-kicker"><span class="cw-industries-kicker-line"></span> INDUSTRIES WE SERVE <small> / 04 CORE SECTORS</small></span><h2 id="cw-industries-title">BUILT FOR<br/><em>EVERY INDUSTRY.</em></h2></div><p>From mining operations to agricultural sites, our specialist transport solutions are engineered around the machinery that moves South Africa.</p></div>
+<div class="cw-industries-grid">
+<a aria-label="Enquire about mining equipment transport" class="cw-industry reveal" href="#contact"><img alt="Mining equipment transport" loading="lazy" src="img3.jpeg"/><span class="cw-industry-shade"></span><span class="cw-industry-top"><span>01 / INDUSTRY</span><i class="bi bi-arrow-up-right"></i></span><span class="cw-industry-bottom"><span class="cw-industry-icon"><i class="bi bi-building-gear"></i></span><strong>MINING</strong><small>HEAVY EQUIPMENT TRANSPORT</small></span></a>
+<a aria-label="Enquire about construction equipment transport" class="cw-industry reveal" href="#contact"><img alt="Construction equipment transport" loading="lazy" src="img4.jpeg"/><span class="cw-industry-shade"></span><span class="cw-industry-top"><span>02 / INDUSTRY</span><i class="bi bi-arrow-up-right"></i></span><span class="cw-industry-bottom"><span class="cw-industry-icon"><i class="bi bi-cone-striped"></i></span><strong>CONSTRUCTION</strong><small>PLANT &amp; MACHINERY MOVEMENT</small></span></a>
+<a aria-label="Enquire about agricultural machinery transport" class="cw-industry reveal" href="#contact"><img alt="Agricultural machinery transport" loading="lazy" src="img5.jpeg"/><span class="cw-industry-shade"></span><span class="cw-industry-top"><span>03 / INDUSTRY</span><i class="bi bi-arrow-up-right"></i></span><span class="cw-industry-bottom"><span class="cw-industry-icon"><i class="bi bi-tree-fill"></i></span><strong>AGRICULTURE</strong><small>AGRICULTURAL EQUIPMENT HAULAGE</small></span></a>
+<a aria-label="Enquire about industrial machinery transport" class="cw-industry reveal" href="#contact"><img alt="Industrial machinery transport" loading="lazy" src="img6.jpeg"/><span class="cw-industry-shade"></span><span class="cw-industry-top"><span>04 / INDUSTRY</span><i class="bi bi-arrow-up-right"></i></span><span class="cw-industry-bottom"><span class="cw-industry-icon"><i class="bi bi-buildings-fill"></i></span><strong>INDUSTRIAL</strong><small>SPECIALISED LOAD SOLUTIONS</small></span></a>
+</div>
+<div class="cw-industries-footer"><span>PRECISION TRANSPORT / SOUTH AFRICA</span><a href="#contact">DISCUSS YOUR REQUIREMENTS <i class="bi bi-arrow-up-right"></i></a></div>
+</div></section>
+<!-- =========================
        WHY COUNTRYWIDE
   ========================= -->
-
-  <section class="section why">
-
-    <div class="container why-grid">
-
-      <div class="why-image reveal">
-
-        <img
-          src="img7.jpeg"
-          alt="Countrywide Lowbed Services truck"
-        >
-
-      </div>
-
-
-      <div class="reveal">
-
-        <div class="section-label">
-          Why Countrywide
-        </div>
-
-
-        <h2 class="section-title">
-          Experience<br>
-          <span>You Can Trust.</span>
-        </h2>
-
-
-        <p
-          class="section-text"
-          style="margin-top:20px;"
-        >
-          Our experienced operations team, professional drivers,
-          and versatile fleet ensure that every load is transported
-          safely, on time, and in full compliance with industry standards.
-        </p>
-
-
-        <div class="why-items">
-
-          <div class="why-item">
-
-            <div class="why-number">
-              01
-            </div>
-
-            <div>
-
-              <h3>
-                26+ Years Industry Experience
-              </h3>
-
-              <p>
-                Decades of practical experience moving heavy equipment
-                and specialised loads.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="why-item">
-
-            <div class="why-number">
-              02
-            </div>
-
-            <div>
-
-              <h3>
-                Safety First
-              </h3>
-
-              <p>
-                Every load is handled with careful planning,
-                professional drivers and a strong focus on safety.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="why-item">
-
-            <div class="why-number">
-              03
-            </div>
-
-            <div>
-
-              <h3>
-                Nationwide Coverage
-              </h3>
-
-              <p>
-                Based in Secunda and available to transport
-                throughout South Africa.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="why-item">
-
-            <div class="why-number">
-              04
-            </div>
-
-            <div>
-
-              <h3>
-                Reliable Delivery
-              </h3>
-
-              <p>
-                Professional transport solutions focused on getting
-                your equipment where it needs to be.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
+<section class="section why cw-why-future" id="why-countrywide" aria-labelledby="cw-why-heading">
+  <div class="cw-why-ambient" aria-hidden="true"></div>
+  <div class="container cw-why-wrap">
+    <div class="cw-why-heading reveal">
+      <div class="cw-why-eyebrow"><span class="cw-why-rule"></span> THE COUNTRYWIDE ADVANTAGE <span class="cw-why-index">08 / WHY COUNTRYWIDE</span></div>
+      <h2 id="cw-why-heading">BUILT ON EXPERIENCE.<br><em>DRIVEN BY TRUST.</em></h2>
+      <p>When the load is exceptional, the transport partner matters. Our experienced operations team, professional drivers and versatile fleet deliver reliable, carefully planned heavy-haulage solutions.</p>
     </div>
-
-  </section>
-
-
-  <!-- =========================
+    <div class="cw-why-layout">
+      <div class="cw-why-visual reveal">
+        <div class="cw-why-photo" role="img" aria-label="Countrywide Lowbed Services heavy-haulage truck"></div>
+        <div class="cw-why-photo-shade"></div>
+        <div class="cw-why-visual-top"><span>FIELD OPERATIONS</span><span>SECUNDA / SOUTH AFRICA</span></div>
+        <div class="cw-why-frame cw-why-frame-a"></div><div class="cw-why-frame cw-why-frame-b"></div>
+        <div class="cw-why-photo-caption"><span class="cw-why-vertical-line"></span><div><strong>REAL EQUIPMENT.<br>REAL EXPERIENCE.</strong><small>PROFESSIONAL TRANSPORT SOLUTIONS</small></div></div>
+        <div class="cw-why-photo-glow" aria-hidden="true"></div>
+      </div>
+      <div class="cw-why-points">
+        <article class="cw-why-point reveal"><span class="cw-why-point-number">01</span><div><h3>26+ YEARS OF EXPERIENCE</h3><p>Decades of practical experience moving heavy equipment and specialised loads.</p></div><span class="cw-why-point-mark" aria-hidden="true">↗</span></article>
+        <article class="cw-why-point reveal"><span class="cw-why-point-number">02</span><div><h3>SAFETY FIRST</h3><p>Every load is handled with careful planning, professional drivers and a strong focus on safety.</p></div><span class="cw-why-point-mark" aria-hidden="true">↗</span></article>
+        <article class="cw-why-point reveal"><span class="cw-why-point-number">03</span><div><h3>NATIONWIDE COVERAGE</h3><p>Based in Secunda and available to transport throughout South Africa.</p></div><span class="cw-why-point-mark" aria-hidden="true">↗</span></article>
+        <article class="cw-why-point reveal"><span class="cw-why-point-number">04</span><div><h3>RELIABLE DELIVERY</h3><p>Professional transport solutions focused on getting your equipment where it needs to be.</p></div><span class="cw-why-point-mark" aria-hidden="true">↗</span></article>
+        <a class="cw-why-cta" href="#contact">DISCUSS YOUR TRANSPORT REQUIREMENTS <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="cw-why-bottom"><span>PRECISION / RESPONSIBILITY / RELIABILITY</span><span>COUNTRYWIDE LOWBED SERVICES</span></div>
+  </div>
+</section>
+<!-- =========================
        GALLERY / OUR FLEET
   ========================= -->
-
-  <section
-    class="section gallery"
-    id="gallery"
-  >
-
-    <div class="container">
-
-      <div class="section-heading reveal">
-
-        <div class="section-label">
-          Our Fleet
-        </div>
-
-
-        <h2 class="section-title">
-          Built For<br>
-          <span>The Big Jobs.</span>
-        </h2>
-
+<section class="section gallery cw-fleet" id="gallery" aria-label="Countrywide fleet gallery">
+  <div class="container cw-fleet-inner">
+    <div class="cw-fleet-top reveal">
+      <div><div class="cw-fleet-eyebrow"><span class="cw-fleet-signal"></span> COUNTRYWIDE / FLEET OPERATIONS <span class="cw-fleet-index">05 — 06</span></div>
+        <h2 class="cw-fleet-title">BUILT FOR <span>THE BIG JOBS.</span></h2>
       </div>
-
-
-      <div class="gallery-grid">
-
-        <div class="gallery-item reveal">
-
-          <img
-            src="img1.jpeg"
-            alt="Countrywide Lowbed Services truck"
-          >
-
-          <div class="gallery-overlay">
-            Heavy Haulage
-          </div>
-
-        </div>
-
-
-        <div class="gallery-item reveal">
-
-          <img
-            src="img9.jpeg"
-            alt="Heavy machinery transport"
-          >
-
-          <div class="gallery-overlay">
-            Machinery
-          </div>
-
-        </div>
-
-
-        <div class="gallery-item reveal">
-
-          <img
-            src="img3.jpeg"
-            alt="Mining transport"
-          >
-
-          <div class="gallery-overlay">
-            Mining
-          </div>
-
-        </div>
-
-
-        <div class="gallery-item reveal">
-
-          <img
-            src="img8.jpeg"
-            alt="Countrywide Lowbed Services transport"
-          >
-
-          <div class="gallery-overlay">
-            Nationwide Transport
-          </div>
-
-        </div>
-
-      </div>
-
+      <p class="cw-fleet-intro">Real equipment. Real capability. Explore the trucks and transport operations behind every demanding load.</p>
     </div>
-
-  </section>
-
-
-  <!-- =========================
+    <div class="cw-fleet-system" aria-hidden="true"><span>FLEET VISUAL ARCHIVE</span><span>PRECISION / CAPABILITY / REACH</span></div>
+    <div class="cw-fleet-grid">
+      <figure class="cw-fleet-tile cw-fleet-tile-main reveal"><img src="img1.jpeg" alt="Countrywide Lowbed Services heavy-haulage truck" loading="lazy"/><figcaption><span class="cw-fleet-number">01 / FLEET</span><strong>HEAVY HAULAGE</strong><span class="cw-fleet-arrow" aria-hidden="true">↗</span></figcaption></figure>
+      <figure class="cw-fleet-tile cw-fleet-tile-second reveal"><img src="img9.jpeg" alt="Heavy machinery transportation" loading="lazy"/><figcaption><span class="cw-fleet-number">02 / FLEET</span><strong>MACHINERY TRANSPORT</strong><span class="cw-fleet-arrow" aria-hidden="true">↗</span></figcaption></figure>
+      <figure class="cw-fleet-tile cw-fleet-tile-third reveal"><img src="img3.jpeg" alt="Countrywide mining equipment transport" loading="lazy"/><figcaption><span class="cw-fleet-number">03 / FLEET</span><strong>MINING EQUIPMENT</strong><span class="cw-fleet-arrow" aria-hidden="true">↗</span></figcaption></figure>
+      <figure class="cw-fleet-tile cw-fleet-tile-wide reveal"><img src="img8.jpeg" alt="Countrywide nationwide transport operation" loading="lazy"/><figcaption><span class="cw-fleet-number">04 / FLEET</span><strong>NATIONWIDE TRANSPORT</strong><span class="cw-fleet-arrow" aria-hidden="true">↗</span></figcaption></figure>
+    </div>
+    <div class="cw-fleet-bottom"><span>BUILT TO CARRY WHAT MATTERS</span><a href="#contact">PLAN YOUR TRANSPORT <span aria-hidden="true">↗</span></a></div>
+  </div>
+</section>
+<!-- =========================
        CONTACT
   ========================= -->
-
-  <section
-    class="section contact"
-    id="contact"
-  >
-
-    <div class="container contact-grid">
-
-      <div class="reveal">
-
-        <div class="section-label">
+<section class="section contact" id="contact">
+<div class="container contact-grid">
+<div class="reveal">
+<div class="section-label">
           Contact Us
         </div>
-
-
-        <h2 class="section-title">
-          Let's Move<br>
-          <span>Your Load.</span>
-        </h2>
-
-
-        <p class="contact-intro">
+<h2 class="section-title">
+          Let's Move<br/>
+<span>Your Load.</span>
+</h2>
+<p class="contact-intro">
           Have heavy equipment, machinery or an abnormal load
           that needs to be transported?
           Speak to our team today and let's discuss your
           transport requirements.
         </p>
-
-
-        <div class="contact-details">
-
-          <div class="contact-item">
-
-            <div class="contact-icon">
-              <i class="bi bi-telephone"></i>
-            </div>
-
-            <div>
-
-              <small>
+<div class="cw-contact-meta">DIRECT CONTACT / OPERATIONS DESK</div>
+<div class="contact-details">
+<div class="contact-item">
+<div class="contact-icon">
+<i class="bi bi-telephone"></i>
+</div>
+<div>
+<small>
                 Office
               </small>
-
-              <a href="tel:+27711077261">
+<a href="tel:+27711077261">
                 071 107 7261
               </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="contact-item">
-
-            <div class="contact-icon">
-              <i class="bi bi-envelope"></i>
-            </div>
-
-            <div>
-
-              <small>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="bi bi-envelope"></i>
+</div>
+<div>
+<small>
                 Email
               </small>
-
-              <a href="mailto:countrywidelowbed@gmail.com">
+<a href="mailto:countrywidelowbed@gmail.com">
                 countrywidelowbed@gmail.com
               </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="contact-item">
-
-            <div class="contact-icon">
-              <i class="bi bi-exclamation-triangle"></i>
-            </div>
-
-            <div>
-
-              <small>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="bi bi-exclamation-triangle"></i>
+</div>
+<div>
+<small>
                 Emergency
               </small>
-
-              <a href="tel:+27625417499">
+<a href="tel:+27625417499">
                 062 541 7499
               </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="contact-item">
-
-            <div class="contact-icon">
-              <i class="bi bi-geo-alt"></i>
-            </div>
-
-            <div>
-
-              <small>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="bi bi-geo-alt"></i>
+</div>
+<div>
+<small>
                 Address
               </small>
-
-              <span>
-                Extension 53, Detroit Crescent,<br>
+<span>
+                Extension 53, Detroit Crescent,<br/>
                 Secunda, 2302
               </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- GET A QUOTE FORM -->
-
-      <div class="contact-box reveal">
-
-        <form
-          class="quote-form"
-          action="https://formspree.io/f/meaoklaq"
-          method="POST"
-        >
-
-          <input
-            type="hidden"
-            name="_subject"
-            value="New Transport Quote Request - Countrywide Lowbed Services"
-          >
-
-          <input
-            type="hidden"
-            name="_captcha"
-            value="false"
-          >
-
-          <div class="quote-form-group">
-
-            <label for="fullName">
+</div>
+</div>
+</div>
+</div>
+<!-- GET A QUOTE FORM -->
+<div class="contact-box reveal">
+<div class="cw-form-heading"><small>TRANSPORT ENQUIRY / 001</small><h3>REQUEST A QUOTE<span style="color:#ffc107">.</span></h3><p>Tell us what needs moving. Our team will review your transport requirements.</p></div>
+<form action="https://formspree.io/f/meaoklaq" class="quote-form" method="POST">
+<input name="_subject" type="hidden" value="New Transport Quote Request - Countrywide Lowbed Services"/>
+<input name="_captcha" type="hidden" value="false"/>
+<div class="quote-form-group">
+<label for="fullName">
               Full Name <span>*</span>
-            </label>
-
-            <input
-              type="text"
-              id="fullName"
-              name="Full Name"
-              placeholder="Enter your full name"
-              required
-            >
-
-          </div>
-
-
-          <div class="quote-form-group">
-
-            <label for="companyName">
+</label>
+<input id="fullName" name="Full Name" placeholder="Enter your full name" required="" type="text"/>
+</div>
+<div class="quote-form-group">
+<label for="companyName">
               Company Name
             </label>
-
-            <input
-              type="text"
-              id="companyName"
-              name="Company Name"
-              placeholder="Enter company name"
-            >
-
-          </div>
-
-
-          <div class="quote-form-group">
-
-            <label for="phone">
+<input id="companyName" name="Company Name" placeholder="Enter company name" type="text"/>
+</div>
+<div class="quote-form-group">
+<label for="phone">
               Phone Number <span>*</span>
-            </label>
-
-            <input
-              type="tel"
-              id="phone"
-              name="Phone Number"
-              placeholder="Enter phone number"
-              required
-            >
-
-          </div>
-
-
-          <div class="quote-form-group">
-
-            <label for="email">
+</label>
+<input id="phone" name="Phone Number" placeholder="Enter phone number" required="" type="tel"/>
+</div>
+<div class="quote-form-group">
+<label for="email">
               Email Address <span>*</span>
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              name="Email Address"
-              placeholder="Enter email address"
-              required
-            >
-
-          </div>
-
-
-          <div class="quote-form-group full-width">
-
-            <label for="transporting">
+</label>
+<input id="email" name="Email Address" placeholder="Enter email address" required="" type="email"/>
+</div>
+<div class="quote-form-group full-width">
+<label for="transporting">
               What Are You Transporting? <span>*</span>
-            </label>
-
-            <input
-              type="text"
-              id="transporting"
-              name="What Are You Transporting?"
-              placeholder="e.g. Excavator, mining equipment, machinery"
-              required
-            >
-
-          </div>
-
-
-          <div class="quote-form-group">
-
-            <label for="transportDate">
+</label>
+<input id="transporting" name="What Are You Transporting?" placeholder="e.g. Excavator, mining equipment, machinery" required="" type="text"/>
+</div>
+<div class="quote-form-group">
+<label for="transportDate">
               Preferred Transport Date
             </label>
-
-            <input
-              type="date"
-              id="transportDate"
-              name="Preferred Transport Date"
-            >
-
-          </div>
-
-
-          <div class="quote-form-group">
-
-            <label for="loadWeight">
+<input id="transportDate" name="Preferred Transport Date" type="date"/>
+</div>
+<div class="quote-form-group">
+<label for="loadWeight">
               Approximate Load Weight
             </label>
-
-            <input
-              type="text"
-              id="loadWeight"
-              name="Approximate Load Weight"
-              placeholder="e.g. 25 tons"
-            >
-
-          </div>
-
-
-          <div class="quote-form-group">
-
-            <label for="pickup">
+<input id="loadWeight" name="Approximate Load Weight" placeholder="e.g. 25 tons" type="text"/>
+</div>
+<div class="quote-form-group">
+<label for="pickup">
               Pickup Location <span>*</span>
-            </label>
-
-            <input
-              type="text"
-              id="pickup"
-              name="Pickup Location"
-              placeholder="Where should we collect the load?"
-              required
-            >
-
-          </div>
-
-
-          <div class="quote-form-group">
-
-            <label for="delivery">
+</label>
+<input id="pickup" name="Pickup Location" placeholder="Where should we collect the load?" required="" type="text"/>
+</div>
+<div class="quote-form-group">
+<label for="delivery">
               Delivery Location <span>*</span>
-            </label>
-
-            <input
-              type="text"
-              id="delivery"
-              name="Delivery Location"
-              placeholder="Where should we deliver the load?"
-              required
-            >
-
-          </div>
-
-
-          <div class="quote-form-group full-width">
-
-            <label for="dimensions">
+</label>
+<input id="delivery" name="Delivery Location" placeholder="Where should we deliver the load?" required="" type="text"/>
+</div>
+<div class="quote-form-group full-width">
+<label for="dimensions">
               Approximate Dimensions
             </label>
-
-            <input
-              type="text"
-              id="dimensions"
-              name="Approximate Dimensions"
-              placeholder="e.g. Length × Width × Height"
-            >
-
-          </div>
-
-
-          <div class="quote-form-group full-width">
-
-            <label for="details">
+<input id="dimensions" name="Approximate Dimensions" placeholder="e.g. Length × Width × Height" type="text"/>
+</div>
+<div class="quote-form-group full-width">
+<label for="details">
               Additional Details / Special Requirements
             </label>
-
-            <textarea
-              id="details"
-              name="Additional Details / Special Requirements"
-              placeholder="Tell us anything else we should know about the load or transport requirements..."
-            ></textarea>
-
-          </div>
-
-
-          <div class="privacy-notice">
-
-            <i class="bi bi-shield-check"></i>
-
-            <p>
-              <strong>Privacy Notice:</strong>
+<textarea id="details" name="Additional Details / Special Requirements" placeholder="Tell us anything else we should know about the load or transport requirements..."></textarea>
+</div>
+<div class="privacy-notice">
+<i class="bi bi-shield-check"></i>
+<p>
+<strong>Privacy Notice:</strong>
               The personal information you provide will be used by
               Countrywide Lowbed Services to respond to your enquiry,
               prepare a transport quotation and communicate with you
               regarding your transport requirements.
             </p>
-
-          </div>
-
-
-          <button
-            type="submit"
-            class="quote-submit"
-          >
-
-            <i class="bi bi-send-fill"></i>
+</div>
+<button class="quote-submit" type="submit">
+<i class="bi bi-send-fill"></i>
 
             Request A Quote
 
           </button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       FOOTER
+</form>
+</div>
+</div>
+</section>
+<!-- =========================
+       FOOTER — FUTURISTIC INDUSTRIAL
   ========================= -->
-
-  <footer>
-
-    <div class="container footer-inner">
-
-      <div class="footer-logo">
-
-        COUNTRYWIDE
-        <span>LOWBED SERVICES</span>
-
-      </div>
-
-
-      <p>
-        © 2026 Countrywide Lowbed Services. All Rights Reserved | Built & Developed by
-        <a href="mailto:nadine.marshall45@gmail.com">
-          Nadine Volschenk
-        </a>
-      </p>
-
-
-      <a
-        href="#home"
-        class="back-top"
-        aria-label="Back to top"
-      >
-
-        <i class="bi bi-arrow-up"></i>
-
-      </a>
-
+<footer class="cw-footer" aria-label="Countrywide Lowbed Services footer">
+  <div class="cw-footer-topline" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="container cw-footer-main">
+    <div class="cw-footer-brand">
+      <div class="cw-footer-eyebrow"><span class="cw-footer-signal"></span> SOUTH AFRICAN HEAVY HAULAGE / ESTABLISHED EXPERTISE</div>
+      <a class="cw-footer-wordmark" href="#home" aria-label="Countrywide Lowbed Services — back to home">COUNTRYWIDE<span>LOWBED SERVICES</span></a>
+      <p>Specialist transport for heavy machinery, oversized equipment and abnormal loads — from Secunda to destinations nationwide.</p>
+      <div class="cw-footer-brand-rule"><span>NO LOAD TOO HEAVY.</span><span>NO DISTANCE TOO FAR.</span></div>
     </div>
-
-  </footer>
-
-
-  <!-- =========================
+    <nav class="cw-footer-navigation" aria-label="Footer navigation">
+      <h3>EXPLORE <span>↗</span></h3>
+      <a href="#home">Home <span>01</span></a>
+      <a href="#about">About Us <span>02</span></a>
+      <a href="#services">Our Services <span>03</span></a>
+      <a href="#gallery">Fleet Gallery <span>04</span></a>
+      <a href="#contact">Contact Us <span>05</span></a>
+    </nav>
+    <div class="cw-footer-action">
+      <h3>READY TO MOVE SOMETHING BIG?</h3>
+      <p>Tell us about your load and where it needs to go. We'll help you plan the next move.</p>
+      <a class="cw-footer-cta" href="#contact"><span>REQUEST A TRANSPORT QUOTE</span><span aria-hidden="true">↗</span></a>
+      <div class="cw-footer-location"><span class="cw-footer-location-dot"></span><span>BASED IN SECUNDA, MPUMALANGA<br/>OPERATING NATIONWIDE</span></div>
+    </div>
+  </div>
+  <div class="container cw-footer-bottom">
+    <p>© 2026 COUNTRYWIDE LOWBED SERVICES <span class="cw-footer-bottom-separator">/</span> ALL RIGHTS RESERVED</p>
+    <p>BUILT &amp; DEVELOPED BY <a href="mailto:nadine.marshall45@gmail.com">NADINE VOLSCHENK</a></p>
+    <a class="cw-footer-to-top" href="#home" aria-label="Back to top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+<!-- =========================
        JAVASCRIPT
   ========================= -->
-
-  <script>
+<script>
 
     /* =========================
        WELCOME POPUP
@@ -4006,6 +3554,7 @@
     function closeWelcomePopup() {
 
       welcomePopup.classList.add("hidden");
+      welcomePopup.inert = true;
 
       welcomePopup.setAttribute(
         "aria-hidden",
@@ -4069,6 +3618,29 @@
       }
     );
 
+
+    // Let the hero play uninterrupted; welcome visitors once they reach About.
+    (() => {
+      const key = 'cw-welcome-seen-v1';
+      let seen = false;
+      try { seen = sessionStorage.getItem(key) === '1'; } catch (_) {}
+      if (seen) return;
+      const about = document.getElementById('about');
+      if (!about) return;
+      const show = () => {
+        if (seen || window.scrollY < 80) return;
+        const r = about.getBoundingClientRect();
+        if (r.top > window.innerHeight * .65 || r.bottom <= 80) return;
+        seen = true;
+        try { sessionStorage.setItem(key, '1'); } catch (_) {}
+        welcomePopup.inert = false;
+        welcomePopup.classList.remove('hidden');
+        welcomePopup.setAttribute('aria-hidden', 'false');
+        window.removeEventListener('scroll', show);
+      };
+      window.addEventListener('scroll', show, { passive: true });
+      window.addEventListener('pageshow', show, { once: true });
+    })();
 
     /* =========================
        MOBILE MENU
@@ -4268,6 +3840,30 @@
 
   </script>
 
+
+<script id="cw-sticky-motion-script">
+(()=>{
+ const bar=document.getElementById('cwFollowNav'), toggle=bar.querySelector('.cw-follow-toggle'), mobile=bar.querySelector('.cw-follow-mobile-menu');
+ const hero=document.querySelector('.cw-exact'), mobileHero=document.querySelector('.cw-mobile-exact'), about=document.querySelector('.cw-about-approved');
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const close=()=>{mobile.classList.remove('is-open');toggle.setAttribute('aria-expanded','false')};
+ toggle.addEventListener('click',()=>{const open=mobile.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open))});
+ bar.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+ let pending=false;
+ function update(){pending=false;const activeHero=hero&&getComputedStyle(hero).display!=='none'?hero:mobileHero;
+   const threshold=activeHero?activeHero.getBoundingClientRect().top+window.scrollY+Math.min(110,activeHero.offsetHeight*.13):110;
+   bar.classList.toggle('is-visible',window.scrollY>threshold);
+   if(reduced)return;
+   if(hero&&getComputedStyle(hero).display!=='none'){
+     const r=hero.getBoundingClientRect();hero.style.setProperty('--cw-hero-drift',Math.max(-12,Math.min(12,-r.top*.026))+'px');hero.style.setProperty('--cw-depth-scale',(1.018+Math.max(0,Math.min(.018,-r.top*.000025))).toFixed(4));hero.style.setProperty('--cw-stage-scroll',Math.min(1,Math.max(0,-r.top/Math.max(1,r.height))).toFixed(3));hero.style.setProperty('--cw-stage-zoom',(1.015+Math.min(.09,Math.max(0,-r.top/Math.max(1,r.height))*.09)).toFixed(4));
+   }
+   if(about){const r=about.getBoundingClientRect();const relative=(window.innerHeight*.5-(r.top+r.height*.5));about.style.setProperty('--cw-about-drift',Math.max(-18,Math.min(18,relative*.055))+'px')}
+ }
+ window.addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(update)}},{passive:true});
+ window.addEventListener('resize',update);update();
+})();
+</script>
+
 </body>
 </html>
-```
